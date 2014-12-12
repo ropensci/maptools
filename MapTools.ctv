@@ -1,9 +1,9 @@
 <CRANTaskView>
 
-<name>MappingTools</name>
+<name>MapTools</name>
 <topic>Mapping tools and services</topic>
 <maintainer email="karthik@ropensci.org">Karthik Ram, Hadley Wickham, Scott Chamberlain, Ramnath Vaidyanathan</maintainer>
-<version>2014-11-10</version>
+<version>2014-12-11</version>
 
 <info> This task view contains information about using R to work with mapping tools on the wb. The base version of R does not ship with many tools for interacting with the web. Thankfully, there are an increasingly large number of tools for interacting with the web. A list of available packages and functions is presented below, grouped by the type of activity.
 
@@ -16,7 +16,7 @@ Mapping tools in R
 <p><strong>Parsing Data from the Web</strong></p>
 <ul>
 <li>
-txt, csv, etc.: you can use <code>read.csv()</code> after acquiring the csv file from the web via e.g., <code>getURL()</code> from RCurl. <code>read.csv()</code> works with http but not https, i.e.: <code>read.csv("http://...")</code>, but not <code>read.csv("https://...")</code>. 
+txt, csv, etc.: you can use <code>read.csv()</code> after acquiring the csv file from the web via e.g., <code>getURL()</code> from RCurl. <code>read.csv()</code> works with http but not https, i.e.: <code>read.csv("http://...")</code>, but not <code>read.csv("https://...")</code>.
 </li>
 
 
