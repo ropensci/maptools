@@ -51,13 +51,9 @@ Mapping tools in R
 
 <packagelist>
   <pkg priority="core">sp</pkg>
-  <pkg>ggmap</pkg>
-  <pkg>lattice</pkg>
-  <pkg>leafletR</pkg>
-  <pkg>micromap</pkg>
-  <pkg>OpenStreetMap</pkg>
-  <pkg>plotGoogleMaps</pkg>
-  <pkg>Rgooglemaps</pkg>
+{{#pkgs}}
+  <pkg>{{package}}</pkg>
+{{/pkgs}}
 </packagelist>
 
 <links>
