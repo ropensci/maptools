@@ -84,5 +84,5 @@ Mapping tools in R
 
 ### Related links:
 
--   [GitHub package: animint](https://github.com/tdhock/animint)
+-   [\#](#)
 
