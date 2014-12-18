@@ -42,9 +42,19 @@ Mapping tools in R
 <li>
 <a href="https://github.com/Vizzuality/cartodb-r">cartodb</a>: CartoDB R client. Not on CRAN, and hasn't been active for a while. <a href="https://github.com/Vizzuality/cartodb-r">Source on Github</a>
 </li>
+</ul>
 
-
-
+<p><strong>Geocoding</strong></p>
+<ul>
+<li>
+<pkg>geocodeHERE</pkg>: Client for Nokia's <a href="https://developer.here.com/geocoder">HERE geocoding API</a>. <a href="https://github.com/corynissen/geocodeHERE/">Source on GitHub</a>
+</li>
+<li>
+<pkg>ggmap</pkg>: The function <code>geocode</code> in <pkg>ggmap</pkg> uses the <a href="https://developers.google.com/maps/documentation/geocoding/?csw=1">Google Geocoding API</a>. <a href="https://github.com/">Source on Github</a>
+</li>
+<li>
+<a href="https://github.com/trestletech/rydn">rydn</a>: Client for the Yahoo! Developers Network <a href="https://developer.yahoo.com/boss/">BOSS PlaceFinder API</a>. <a href="https://github.com/trestletech/rydn">Source on Github</a>
+</li>
 </ul>
 
 </info>
@@ -57,7 +67,9 @@ Mapping tools in R
 </packagelist>
 
 <links>
-  <a href="#">#</a>
+	<a href="https://github.com/ramnathv/rMaps">GitHub package: rMaps</a>
+	<a href="https://github.com/Vizzuality/cartodb-r">GitHub package: cartodb</a>
+  <a href="https://github.com/trestletech/rydn">GitHub package: rydn</a>
 </links>
 
 </CRANTaskView>

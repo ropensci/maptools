@@ -69,10 +69,28 @@ Mapping tools in R
     client. Not on CRAN, and hasn't been active for a while. [Source on
     Github](https://github.com/Vizzuality/cartodb-r)
 
+### Geocoding
+
+-   [geocodeHERE](http://cran.r-project.org/web/packages/geocodeHERE/index.html):
+    Client for Nokia's [HERE geocoding
+    API](https://developer.here.com/geocoder). [Source on
+    GitHub](https://github.com/corynissen/geocodeHERE/)
+-   [ggmap](http://cran.r-project.org/web/packages/ggmap/index.html):
+    The function `geocode` in
+    [ggmap](http://cran.r-project.org/web/packages/ggmap/index.html)
+    uses the [Google Geocoding
+    API](https://developers.google.com/maps/documentation/geocoding/?csw=1).
+    [Source on Github](https://github.com/)
+-   [rydn](https://github.com/trestletech/rydn): Client for the Yahoo!
+    Developers Network [BOSS PlaceFinder
+    API](https://developer.yahoo.com/boss/). [Source on
+    Github](https://github.com/trestletech/rydn)
+
 
 
 ### CRAN packages:
 
+-   [geocodeHERE](http://cran.r-project.org/web/packages/geocodeHERE/index.html)
 -   [ggmap](http://cran.r-project.org/web/packages/ggmap/index.html)
 -   [lattice](http://cran.r-project.org/web/packages/lattice/index.html)
 -   [leafletR](http://cran.r-project.org/web/packages/leafletR/index.html)
@@ -84,5 +102,7 @@ Mapping tools in R
 
 ### Related links:
 
--   [\#](#)
+-   [GitHub package: rMaps](https://github.com/ramnathv/rMaps)
+-   [GitHub package: cartodb](https://github.com/Vizzuality/cartodb-r)
+-   [GitHub package: rydn](https://github.com/trestletech/rydn)
 
