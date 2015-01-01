@@ -28,43 +28,6 @@ Mapping tools in R
 
 ### Visualization
 
--   [sp](http://cran.r-project.org/web/packages/sp/index.html): Core
-    package in R for doing spatial data manipulation and analysis.
-    Plotting capabilities in
-    [sp](http://cran.r-project.org/web/packages/sp/index.html) based on
-    [lattice](http://cran.r-project.org/web/packages/lattice/index.html).
-    [Source on
-    R-Forge](https://r-forge.r-project.org/projects/rspatial/)
--   [ggmap](http://cran.r-project.org/web/packages/ggmap/index.html):
-    Visualization of spatial data and models on top of Google Maps,
-    OpenStreetMaps, Stamen Maps, or CloudMade Maps using ggplot2.
-    [Source on Github](https://github.com/dkahle/ggmap)
--   [micromap](http://cran.r-project.org/web/packages/micromap/index.html):
-    This group of functions simplifies the creation of linked micromap
-    plots, and uses ggplot2 plotting framework. Source not available.
--   [Rgooglemaps](http://cran.r-project.org/web/packages/Rgooglemaps/index.html):
-    Query Google static maps, and use the map as a background image to
-    overlay plots within R. [Source on
-    Github](https://github.com/markusloecher/RgoogleMaps)
--   [plotGoogleMaps](http://cran.r-project.org/web/packages/plotGoogleMaps/index.html):
-    This package provides a interactive plot device for handling the
-    geographic data for web browsers. It is designed for the automatic
-    creation of web maps as a combination of users' data and Google Maps
-    layers.
--   [rMaps](https://github.com/ramnathv/rMaps): A general purpose
-    wrapper around man Javascript mapping libraries, including
-    [Leaflet](http://leafletjs.com/),
-    [Datamaps](http://datamaps.github.io/), and
-    [Crosslet](http://sztanko.github.io/crosslet/). [Source on
-    Github](https://github.com/ramnathv/rMaps)
--   [OpenStreetMap](http://cran.r-project.org/web/packages/OpenStreetMap/index.html):
-    An R client for the Open Stree Maps API. [Source on
-    Github](https://github.com/)
--   [leafletR](http://cran.r-project.org/web/packages/leafletR/index.html):
-    Client for the JavaScript library Leaflet.js. Basic mapping
-    functionality to combine vector data and online map tiles from
-    different sources. [Source on
-    Github](https://github.com/chgrl/leafletR)
 -   [cartodb](https://github.com/Vizzuality/cartodb-r): CartoDB R
     client. Not on CRAN, and hasn't been active for a while. [Source on
     Github](https://github.com/Vizzuality/cartodb-r)
@@ -72,6 +35,43 @@ Mapping tools in R
     maps in R using
     [d3-carto-map](https://github.com/emeeks/d3-carto-map). [Source on
     Github](https://github.com/lmullen/cartographer)
+-   [ggmap](http://cran.r-project.org/web/packages/ggmap/index.html):
+    Visualization of spatial data and models on top of Google Maps,
+    OpenStreetMaps, Stamen Maps, or CloudMade Maps using ggplot2.
+    [Source on Github](https://github.com/dkahle/ggmap)
+-   [leafletR](http://cran.r-project.org/web/packages/leafletR/index.html):
+    Client for the JavaScript library Leaflet.js. Basic mapping
+    functionality to combine vector data and online map tiles from
+    different sources. [Source on
+    Github](https://github.com/chgrl/leafletR)
+-   [micromap](http://cran.r-project.org/web/packages/micromap/index.html):
+    This group of functions simplifies the creation of linked micromap
+    plots, and uses ggplot2 plotting framework. Source not available.
+-   [OpenStreetMap](http://cran.r-project.org/web/packages/OpenStreetMap/index.html):
+    An R client for the Open Stree Maps API. [Source on
+    Github](https://github.com/)
+-   [plotGoogleMaps](http://cran.r-project.org/web/packages/plotGoogleMaps/index.html):
+    This package provides a interactive plot device for handling the
+    geographic data for web browsers. It is designed for the automatic
+    creation of web maps as a combination of users' data and Google Maps
+    layers.
+-   [Rgooglemaps](http://cran.r-project.org/web/packages/Rgooglemaps/index.html):
+    Query Google static maps, and use the map as a background image to
+    overlay plots within R. [Source on
+    Github](https://github.com/markusloecher/RgoogleMaps)
+-   [rMaps](https://github.com/ramnathv/rMaps): A general purpose
+    wrapper around man Javascript mapping libraries, including
+    [Leaflet](http://leafletjs.com/),
+    [Datamaps](http://datamaps.github.io/), and
+    [Crosslet](http://sztanko.github.io/crosslet/). [Source on
+    Github](https://github.com/ramnathv/rMaps)
+-   [sp](http://cran.r-project.org/web/packages/sp/index.html): Core
+    package in R for doing spatial data manipulation and analysis.
+    Plotting capabilities in
+    [sp](http://cran.r-project.org/web/packages/sp/index.html) based on
+    [lattice](http://cran.r-project.org/web/packages/lattice/index.html).
+    [Source on
+    R-Forge](https://r-forge.r-project.org/projects/rspatial/)
 
 ### Geocoding
 

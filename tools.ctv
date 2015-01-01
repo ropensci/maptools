@@ -16,34 +16,34 @@ Mapping tools in R
 <p><strong>Visualization</strong></p>
 <ul>
 <li>
-<pkg>sp</pkg>: Core package in R for doing spatial data manipulation and analysis. Plotting capabilities in <pkg>sp</pkg> based on <pkg>lattice</pkg>. <a href="https://r-forge.r-project.org/projects/rspatial/">Source on R-Forge</a>
+<a href="https://github.com/Vizzuality/cartodb-r">cartodb</a>: CartoDB R client. Not on CRAN, and hasn't been active for a while. <a href="https://github.com/Vizzuality/cartodb-r">Source on Github</a>
+</li>
+<li>
+<a href="https://github.com/lmullen/cartographer">cartographer</a>: Interactive maps in R using <a href="https://github.com/emeeks/d3-carto-map">d3-carto-map</a>. <a href="https://github.com/lmullen/cartographer">Source on Github</a>
 </li>
 <li>
 <pkg>ggmap</pkg>: Visualization of spatial data and models on top of Google Maps, OpenStreetMaps, Stamen Maps, or CloudMade Maps using ggplot2. <a href="https://github.com/dkahle/ggmap">Source on Github</a>
 </li>
 <li>
+<pkg>leafletR</pkg>: Client for the JavaScript library Leaflet.js. Basic mapping functionality to combine vector data and online map tiles from different sources. <a href="https://github.com/chgrl/leafletR">Source on Github</a>
+</li>
+<li>
 <pkg>micromap</pkg>: This group of functions simplifies the creation of linked micromap plots, and uses ggplot2 plotting framework. Source not available.
-</li>
-<li>
-<pkg>Rgooglemaps</pkg>: Query Google static maps, and use the map as a background image to overlay plots within R. <a href="https://github.com/markusloecher/RgoogleMaps">Source on Github</a>
-</li>
-<li>
-<pkg>plotGoogleMaps</pkg>: This package provides a interactive plot device for handling the geographic data for web browsers. It is designed for the automatic creation of web maps as a combination of users' data and Google Maps layers.
-</li>
-<li>
-<a href="https://github.com/ramnathv/rMaps">rMaps</a>: A general purpose wrapper around man Javascript mapping libraries, including <a href="http://leafletjs.com/">Leaflet</a>, <a href="http://datamaps.github.io/">Datamaps</a>, and <a href="http://sztanko.github.io/crosslet/">Crosslet</a>. <a href="https://github.com/ramnathv/rMaps">Source on Github</a>
 </li>
 <li>
 <pkg>OpenStreetMap</pkg>: An R client for the Open Stree Maps API. <a href="https://github.com/">Source on Github</a>
 </li>
 <li>
-<pkg>leafletR</pkg>: Client for the JavaScript library Leaflet.js. Basic mapping functionality to combine vector data and online map tiles from different sources. <a href="https://github.com/chgrl/leafletR">Source on Github</a>
+<pkg>plotGoogleMaps</pkg>: This package provides a interactive plot device for handling the geographic data for web browsers. It is designed for the automatic creation of web maps as a combination of users' data and Google Maps layers.
 </li>
 <li>
-<a href="https://github.com/Vizzuality/cartodb-r">cartodb</a>: CartoDB R client. Not on CRAN, and hasn't been active for a while. <a href="https://github.com/Vizzuality/cartodb-r">Source on Github</a>
+<pkg>Rgooglemaps</pkg>: Query Google static maps, and use the map as a background image to overlay plots within R. <a href="https://github.com/markusloecher/RgoogleMaps">Source on Github</a>
 </li>
 <li>
-<a href="https://github.com/lmullen/cartographer">cartographer</a>: Interactive maps in R using <a href="https://github.com/emeeks/d3-carto-map">d3-carto-map</a>. <a href="https://github.com/lmullen/cartographer">Source on Github</a>
+<a href="https://github.com/ramnathv/rMaps">rMaps</a>: A general purpose wrapper around man Javascript mapping libraries, including <a href="http://leafletjs.com/">Leaflet</a>, <a href="http://datamaps.github.io/">Datamaps</a>, and <a href="http://sztanko.github.io/crosslet/">Crosslet</a>. <a href="https://github.com/ramnathv/rMaps">Source on Github</a>
+</li>
+<li>
+<pkg>sp</pkg>: Core package in R for doing spatial data manipulation and analysis. Plotting capabilities in <pkg>sp</pkg> based on <pkg>lattice</pkg>. <a href="https://r-forge.r-project.org/projects/rspatial/">Source on R-Forge</a>
 </li>
 </ul>
 
