@@ -68,6 +68,10 @@ Mapping tools in R
 -   [cartodb](https://github.com/Vizzuality/cartodb-r): CartoDB R
     client. Not on CRAN, and hasn't been active for a while. [Source on
     Github](https://github.com/Vizzuality/cartodb-r)
+-   [cartographer](https://github.com/lmullen/cartographer): Interactive
+    maps in R using
+    [d3-carto-map](https://github.com/emeeks/d3-carto-map). [Source on
+    Github](https://github.com/lmullen/cartographer)
 
 ### Geocoding
 

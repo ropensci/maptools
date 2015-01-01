@@ -42,6 +42,9 @@ Mapping tools in R
 <li>
 <a href="https://github.com/Vizzuality/cartodb-r">cartodb</a>: CartoDB R client. Not on CRAN, and hasn't been active for a while. <a href="https://github.com/Vizzuality/cartodb-r">Source on Github</a>
 </li>
+<li>
+<a href="https://github.com/lmullen/cartographer">cartographer</a>: Interactive maps in R using <a href="https://github.com/emeeks/d3-carto-map">d3-carto-map</a>. <a href="https://github.com/lmullen/cartographer">Source on Github</a>
+</li>
 </ul>
 
 <p><strong>Geocoding</strong></p>
