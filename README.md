@@ -4,7 +4,7 @@ CRAN Task View: Mapping tools and services
   ----------------- ----------------------------------------------------------------------
   **Maintainer:**   Karthik Ram, Hadley Wickham, Scott Chamberlain, Ramnath Vaidyanathan
   **Contact:**      karthik at ropensci.org
-  **Version:**      2014-12-18
+  **Version:**      2014-12-31
   ----------------- ----------------------------------------------------------------------
 
 

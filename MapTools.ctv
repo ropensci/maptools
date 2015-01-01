@@ -3,7 +3,7 @@
 <name>MapTools</name>
 <topic>Mapping tools and services</topic>
 <maintainer email="karthik@ropensci.org">Karthik Ram, Hadley Wickham, Scott Chamberlain, Ramnath Vaidyanathan</maintainer>
-<version>2014-12-18</version>
+<version>2014-12-31</version>
 
 <info> This task view contains information about using R to work with mapping tools on the wb. The base version of R does not ship with many tools for interacting with the web. Thankfully, there are an increasingly large number of tools for interacting with the web. A list of available packages and functions is presented below, grouped by the type of activity.
 
