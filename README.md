@@ -4,23 +4,25 @@ CRAN Task View: Mapping tools and services
   ----------------- --------------------------------------------------------------------------------------
   **Maintainer:**   Jeff Hollister, Karthik Ram, Hadley Wickham, Scott Chamberlain, Ramnath Vaidyanathan
   **Contact:**      hollister.jeff at epa.gov
-  **Version:**      2014-12-31
+  **Version:**      2015-02-07
   ----------------- --------------------------------------------------------------------------------------
 
 This task view contains information about mapping and visualizing
 spatial data in R. The base version of R does not ship with many tools
 for mapping spatial data. Thankfully, there are an increasingly large
-number of tools for doing so. A list of available packages and functions
-is presented below, grouped by the type of activity. If you have any
-comments or suggestions for additions or improvements for this taskview,
-go to Github and [submit an
-issue](https://github.com/ropensci/maptools/issues), or [make some
-changes](https://github.com/ropensci/maptools/CONTRIBUTING.md) and
+number of tools, both in R and those utilizing javascript libraries, for
+doing so. A list of available packages and functions is presented below,
+grouped by the type of activity. If you have any comments or suggestions
+for additions or improvements for this taskview, go to Github and
+[submit an issue](https://github.com/ropensci/maptools/issues), or [make
+some changes](https://github.com/ropensci/maptools/CONTRIBUTING.md) and
 [submit a pull request](https://github.com/ropensci/maptools/pulls). If
 you can't contribute on Github, [send Jeff an
 email](mailto:hollister.jeff@epa.gov). If you have an issue with one of
 the packages discussed below, please contact the maintainer of that
-package.
+package. This task view is focused on mapping spatial data. For more on
+working with and analyzing spatial data in R, see the [Spatial Task
+View](http://cran.r-project.org/web/views/Spatial.html).
 
 Mapping tools in R
 ------------------
