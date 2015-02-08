@@ -1,6 +1,6 @@
 <CRANTaskView>
 
-<name>Mapping</name>
+<name>MappingTools</name>
 <topic>Mapping tools and services</topic>
 <maintainer email="hollister.jeff@epa.gov">Jeff Hollister, Karthik Ram, Hadley Wickham, Scott Chamberlain, Ramnath Vaidyanathan</maintainer>
 <version>2014-12-31</version>
