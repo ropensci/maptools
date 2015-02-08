@@ -30,7 +30,7 @@ Mapping tools in R
 <pkg>leafletR</pkg>: Client for the JavaScript library Leaflet.js. Basic mapping functionality to combine vector data and online map tiles from different sources. <a href="https://github.com/chgrl/leafletR">Source on Github</a>
 </li>
 <li>
-<pkg>micromap</pkg>: This group of functions simplifies the creation of linked micromap plots, and uses ggplot2 plotting framework. Source not available.
+<pkg>micromap</pkg>: This group of functions simplifies the creation of linked micromap plots, and uses ggplot2 plotting framework. <a href="https://github.com/USEPA/R-micromap-package-development">Source on Github.</a>
 </li>
 <li>
 <pkg>OpenStreetMap</pkg>: An R client for the Open Stree Maps API. <a href="https://github.com/">Source on Github</a>
@@ -55,7 +55,7 @@ Mapping tools in R
 <p><strong>Projecting Data</strong></p>
 <ul>
 <li>
-Differences between geographic (i.e. GPS, DMS, DD, Lat-Long) and projected data
+Coordinates for spatial data can come in many different flavors with different units, different datums, different projections etc.
 </li>
 <li>
 <pkg>mapproj</pkg>

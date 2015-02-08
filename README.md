@@ -47,7 +47,8 @@ Mapping tools in R
     Github](https://github.com/chgrl/leafletR)
 -   [micromap](http://cran.r-project.org/web/packages/micromap/index.html):
     This group of functions simplifies the creation of linked micromap
-    plots, and uses ggplot2 plotting framework. Source not available.
+    plots, and uses ggplot2 plotting framework. [Source on
+    Github.](https://github.com/USEPA/R-micromap-package-development)
 -   [OpenStreetMap](http://cran.r-project.org/web/packages/OpenStreetMap/index.html):
     An R client for the Open Stree Maps API. [Source on
     Github](https://github.com/)
@@ -84,8 +85,8 @@ Mapping tools in R
 
 ### Projecting Data
 
--   Differences between geographic (i.e. GPS, DMS, DD, Lat-Long) and
-    projected data
+-   Coordinates for spatial data can come in many different flavors with
+    different units, different datums, different projections etc.
 -   [mapproj](http://cran.r-project.org/web/packages/mapproj/index.html)
 -   [PBSmapping](http://cran.r-project.org/web/packages/PBSmapping/index.html)
 -   [rgdal](http://cran.r-project.org/web/packages/rgdal/index.html)
