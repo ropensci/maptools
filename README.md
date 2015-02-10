@@ -86,7 +86,15 @@ Mapping tools in R
 ### Projecting Data
 
 -   Coordinates for spatial data can come in many different flavors with
-    different units, different datums, different projections etc.
+    different units, different datums, different projections, and more.
+    Many of the tools will visualize your data regardless of the native
+    coordinate reference system; however, most (all?) of the javascript
+    libraries assume some flavor of lattitude-longitude. Therefore it is
+    necessary to ensure that your data are 1) in the same coordiantes
+    and projection prior to mapping, and 2) that the mapping tool you
+    are using supports those coordinates. There are sevearl options for
+    converting the projection of your spatial data to ensure that these
+    two conditions are met.
 -   [mapproj](http://cran.r-project.org/web/packages/mapproj/index.html)
 -   [PBSmapping](http://cran.r-project.org/web/packages/PBSmapping/index.html)
 -   [rgdal](http://cran.r-project.org/web/packages/rgdal/index.html)
