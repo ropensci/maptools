@@ -85,21 +85,27 @@ Mapping tools in R
 
 ### Projecting Data
 
--   Coordinates for spatial data can come in many different flavors with
-    different units, different datums, different projections, and more.
-    Many of the tools will visualize your data regardless of the native
-    coordinate reference system; however, most (all?) of the javascript
-    libraries assume some flavor of lattitude-longitude. Therefore it is
-    necessary to ensure that your data are 1) in the same coordiantes
-    and projection prior to mapping, and 2) that the mapping tool you
-    are using supports those coordinates. There are sevearl options for
-    converting the projection of your spatial data to ensure that these
-    two conditions are met.
--   [mapproj](http://cran.r-project.org/web/packages/mapproj/index.html)
--   [PBSmapping](http://cran.r-project.org/web/packages/PBSmapping/index.html)
--   [rgdal](http://cran.r-project.org/web/packages/rgdal/index.html)
-    and/or
-    [sp](http://cran.r-project.org/web/packages/sp/index.html):spTransform()
+Coordinates for spatial data can come in many different flavors with
+different units, different datums, different projections, and more. Many
+of the tools will visualize your data regardless of the native
+coordinate reference system; however, most (all?) of the javascript
+libraries assume some flavor of lattitude-longitude, thus if your data
+are projected they need to be transformed back to geographic coordinates
+prior to mapping. For most mapping and visulaization efforts unprojected
+data (often displayed in Web Mercator/EPSG::3857) is fine; however, if
+accuarate area, length, or distance measurements are required through
+interacting with the map, then projections need to be considered. A
+discussion of projections and coordinate systems is beyond the scope of
+this task view. To learn more a good starting place is, [esri's What are
+map
+projections?](http://resources.arcgis.com/en/help/main/10.1/index.html\#//003r00000001000000)
+
+Once you know that you need to transform you data into or out of a
+projection, there are several options:
+
+-   [mapproj](http://cran.r-project.org/web/packages/mapproj/index.html):
+-   [PBSmapping](http://cran.r-project.org/web/packages/PBSmapping/index.html):
+-   [sp](http://cran.r-project.org/web/packages/sp/index.html):spTransform()
 
 ### Geocoding
 
