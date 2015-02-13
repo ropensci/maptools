@@ -1,11 +1,12 @@
 CRAN Task View: Mapping tools and services
 ------------------------------------------
 
-  ----------------- --------------------------------------------------------------------------------------
-  **Maintainer:**   Jeff Hollister, Karthik Ram, Hadley Wickham, Scott Chamberlain, Ramnath Vaidyanathan
-  **Contact:**      hollister.jeff at epa.gov
-  **Version:**      2015-02-07
-  ----------------- --------------------------------------------------------------------------------------
+  ------------------------------------ ------------------------------------
+  **Maintainer:**                      **Contact:**
+  Jeff Hollister, Karthik Ram, Hadley  hollister.jeff at epa.gov
+  Wickham, Scott Chamberlain, Ramnath  
+  Vaidyanathan                         
+  ------------------------------------ ------------------------------------
 
 This task view contains information about mapping and visualizing
 spatial data in R. The base version of R does not ship with many tools
@@ -96,16 +97,33 @@ data (often displayed in Web Mercator/EPSG::3857) is fine; however, if
 accuarate area, length, or distance measurements are required through
 interacting with the map, then projections need to be considered. A
 discussion of projections and coordinate systems is beyond the scope of
-this task view. To learn more a good starting place is, [esri's What are
-map
-projections?](http://resources.arcgis.com/en/help/main/10.1/index.html\#//003r00000001000000)
+this task view. To learn more a good starting place is [NCEAS' Overview
+of Coordinate Reference Systems in
+R](https://www.nceas.ucsb.edu/\~frazier/RSpatialGuides/OverviewCoordinateReferenceSystems.pdf)
 
 Once you know that you need to transform you data into or out of a
 projection, there are several options:
 
+-   [sp](http://cran.r-project.org/web/packages/sp/index.html): The
+    function `spTransform` (and methods in
+    [rgdal](http://cran.r-project.org/web/packages/rgdal/index.html)) is
+    the workhorse function for spatial transformations of vector data
+    and it uses [PROJ.4](http://trac.osgeo.org/proj/) arguments to
+    specify the transformations. Accepted inputs are provided by the
+    spTransform methods in
+    [rgdal](http://cran.r-project.org/web/packages/rgdal/index.html).
+    [](https://r-forge.r-project.org/projects/rspatial/)[sp](http://cran.r-project.org/web/packages/sp/index.html)
+    Source on R-Forge .
+    [](https://r-forge.r-project.org/projects/rgdal/)[rgdal](http://cran.r-project.org/web/packages/rgdal/index.html)
+    Source on R-Forge .
 -   [mapproj](http://cran.r-project.org/web/packages/mapproj/index.html):
+    This package provides a fucntion to convert two vectors representing
+    longitude (x) and lattitude (y) to projected coordinates.
 -   [PBSmapping](http://cran.r-project.org/web/packages/PBSmapping/index.html):
--   [sp](http://cran.r-project.org/web/packages/sp/index.html):spTransform()
+    The function `convUL` will transform coordinates between Universal
+    Transverse Mercator (UTM) and longitude-latitude. A data frame with
+    a `projection` attribute is required input. [Source on Google
+    Code](http://code.google.com/p/pbs-software/)
 
 ### Geocoding
 

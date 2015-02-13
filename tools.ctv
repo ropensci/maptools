@@ -53,18 +53,19 @@ Mapping tools in R
 </ul>
 
 <p><strong>Projecting Data</strong></p>
-<p>Coordinates for spatial data can come in many different flavors with different units, different datums, different projections, and more.  Many of the tools will visualize your data regardless of the native coordinate reference system; however, most (all?) of the javascript libraries assume some flavor of lattitude-longitude, thus if your data are projected they need to be transformed back to geographic coordinates prior to mapping.  For most mapping and visulaization efforts unprojected data (often displayed in Web Mercator/EPSG::3857) is fine; however, if accuarate area, length, or distance measurements are required through interacting with the map, then projections need to be considered.  A discussion of projections and coordinate systems is beyond the scope of this task view.  To learn more a good starting place is, [esri's What are map projections?](http://resources.arcgis.com/en/help/main/10.1/index.html#//003r00000001000000)</p>
+<p>Coordinates for spatial data can come in many different flavors with different units, different datums, different projections, and more.  Many of the tools will visualize your data regardless of the native coordinate reference system; however, most (all?) of the javascript libraries assume some flavor of lattitude-longitude, thus if your data are projected they need to be transformed back to geographic coordinates prior to mapping.  For most mapping and visulaization efforts unprojected data (often displayed in Web Mercator/EPSG::3857) is fine; however, if accuarate area, length, or distance measurements are required through interacting with the map, then projections need to be considered.  A discussion of projections and coordinate systems is beyond the scope of this task view.  To learn more a good starting place is [NCEAS' Overview of Coordinate Reference Systems in R](https://www.nceas.ucsb.edu/~frazier/RSpatialGuides/OverviewCoordinateReferenceSystems.pdf)</p>
 
 <p>Once you know that you need to transform you data into or out of a projection, there are several options:</p>
 <ul>
 <li>
-<pkg>mapproj</pkg>: 
+<pkg>sp</pkg>: The function <code>spTransform</code> (and methods in <pkg>rgdal</pkg>) is the workhorse function for spatial transformations of vector data and it uses [PROJ.4](http://trac.osgeo.org/proj/) arguments to specify the transformations.  Accepted inputs are provided by the spTransform methods in <pkg>rgdal</pkg>.   <a href="https://r-forge.r-project.org/projects/rspatial/"><pkg>sp</pkg> Source on R-Forge</a>. <a href="https://r-forge.r-project.org/projects/rgdal/"><pkg>rgdal</pkg> Source on R-Forge</a>. 
+</li>
+<pkg>raster</pkg>: Use <code>rasterProject()</code> to project rasters. Projecting rasters is a bit different than vector as the transformation results in a rotated grid which require some interpolation to map the original cell values to the new cell values. Dealing with this requires a separate funciton and <code>rasterProject()</code> has options for dealing with the interpolation.
+<li>
+<pkg>mapproj</pkg>: This package provides a fucntion to convert two vectors representing longitude (x) and  lattitude (y) to projected coordinates.  
 </li>
 <li>
-<pkg>PBSmapping</pkg>:
-</li>
-<li>
-<pkg>sp</pkg>:spTransform()
+<pkg>PBSmapping</pkg>: The function <code>convUL</code> will transform coordinates between Universal Transverse Mercator (UTM) and longitude-latitude. A data frame with a <code>projection</code> attribute is required input. <a href="http://code.google.com/p/pbs-software/">Source on Google Code</a>
 </li>
 </ul>
 
