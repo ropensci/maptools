@@ -112,10 +112,10 @@ projection, there are several options:
     specify the transformations. Accepted inputs are provided by the
     spTransform methods in
     [rgdal](http://cran.r-project.org/web/packages/rgdal/index.html).
-    [](https://r-forge.r-project.org/projects/rspatial/)[sp](http://cran.r-project.org/web/packages/sp/index.html)
-    Source on R-Forge .
-    [](https://r-forge.r-project.org/projects/rgdal/)[rgdal](http://cran.r-project.org/web/packages/rgdal/index.html)
-    Source on R-Forge .
+    [Source for `sp` on
+    R-Forge](https://r-forge.r-project.org/projects/rspatial/). [Source
+    for `rgdal` on
+    R-Forge](https://r-forge.r-project.org/projects/rgdal/).
 -   [mapproj](http://cran.r-project.org/web/packages/mapproj/index.html):
     This package provides a fucntion to convert two vectors representing
     longitude (x) and lattitude (y) to projected coordinates.

@@ -58,7 +58,7 @@ Mapping tools in R
 <p>Once you know that you need to transform you data into or out of a projection, there are several options:</p>
 <ul>
 <li>
-<pkg>sp</pkg>: The function <code>spTransform</code> (and methods in <pkg>rgdal</pkg>) is the workhorse function for spatial transformations of vector data and it uses [PROJ.4](http://trac.osgeo.org/proj/) arguments to specify the transformations.  Accepted inputs are provided by the spTransform methods in <pkg>rgdal</pkg>.   <a href="https://r-forge.r-project.org/projects/rspatial/"><pkg>sp</pkg> Source on R-Forge</a>. <a href="https://r-forge.r-project.org/projects/rgdal/"><pkg>rgdal</pkg> Source on R-Forge</a>. 
+<pkg>sp</pkg>: The function <code>spTransform</code> (and methods in <pkg>rgdal</pkg>) is the workhorse function for spatial transformations of vector data and it uses [PROJ.4](http://trac.osgeo.org/proj/) arguments to specify the transformations.  Accepted inputs are provided by the spTransform methods in <pkg>rgdal</pkg>.   <a href="https://r-forge.r-project.org/projects/rspatial/"> Source for <code>sp</code> on R-Forge</a>. <a href="https://r-forge.r-project.org/projects/rgdal/"> Source for <code>rgdal</code> on R-Forge</a>. 
 </li>
 <pkg>raster</pkg>: Use <code>rasterProject()</code> to project rasters. Projecting rasters is a bit different than vector as the transformation results in a rotated grid which require some interpolation to map the original cell values to the new cell values. Dealing with this requires a separate funciton and <code>rasterProject()</code> has options for dealing with the interpolation.
 <li>
