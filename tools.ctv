@@ -100,10 +100,10 @@ Mapping tools in R
 <pkg>geomapdata</pkg>
 </li>
 <li>
-<pkg>geonames</pkg>
+<pkg>geonames</pkg>: functions for working with <a href="http://www.geonames.org/">geonames</a>, a geographical database that covers all countries and contains over eight million placenames
 </li>
 <li>
-<pkg>USAboundaries</pkg>
+<pkg>USAboundaries</pkg>: provides spatial objects with the boundaries of states or counties in the United States of America from 1629 to 2000. It provides data from the Atlas of Historical County Boundaries.
 </li>
 </ul>
 

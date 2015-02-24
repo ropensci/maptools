@@ -149,8 +149,14 @@ projection, there are several options:
 -   [osmar](http://cran.r-project.org/web/packages/osmar/index.html)
 -   [UScensus2010](http://cran.r-project.org/web/packages/UScensus2010/index.html)
 -   [geomapdata](http://cran.r-project.org/web/packages/geomapdata/index.html)
--   [geonames](http://cran.r-project.org/web/packages/geonames/index.html)
--   [USAboundaries](http://cran.r-project.org/web/packages/USAboundaries/index.html)
+-   [geonames](http://cran.r-project.org/web/packages/geonames/index.html):
+    functions for working with [geonames](http://www.geonames.org/), a
+    geographical database that covers all countries and contains over
+    eight million placenames
+-   [USAboundaries](http://cran.r-project.org/web/packages/USAboundaries/index.html):
+    provides spatial objects with the boundaries of states or counties
+    in the United States of America from 1629 to 2000. It provides data
+    from the Atlas of Historical County Boundaries.
 
 ### Map Data I/O
 
