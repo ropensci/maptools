@@ -2,14 +2,14 @@
 
 <name>MappingTools</name>
 <topic>Mapping tools and services</topic>
-<maintainer email="hollister.jeff@epa.gov">Jeff Hollister, Karthik Ram, Hadley Wickham, Scott Chamberlain, Ramnath Vaidyanathan</maintainer>
-<version>2015-02-07</version>
+<maintainer email="hollister.jeff@epa.gov">Jeff Hollister, Scott Chamberlain, Karthik Ram, Hadley Wickham, Ben Marwick, Cory Nissen</maintainer>
+<version>2015-02-27</version>
 
 <info> This task view contains information about mapping and visualizing spatial data in R.  The base version of R does not ship with many tools for mapping spatial data. Thankfully, there are an increasingly large number of tools, both in R and those utilizing javascript libraries, for doing so. A list of available packages and functions is presented below, grouped by the type of activity.
 
 If you have any comments or suggestions for additions or improvements for this taskview, go to Github and <a href="https://github.com/ropensci/maptools/issues">submit an issue</a>, or <a href="https://github.com/ropensci/maptools/CONTRIBUTING.md">make some changes</a> and <a href="https://github.com/ropensci/maptools/pulls">submit a pull request</a>. If you can't contribute on Github, <a href="mailto:hollister.jeff@epa.gov">send Jeff an email</a>. If you have an issue with one of the packages discussed below, please contact the maintainer of that package.
 
-This task view is focused on mapping spatial data.  For more on working with and analyzing spatial data in R, see the <a href="http://cran.r-project.org/web/views/Spatial.html">Spatial Task View</a>.
+This task view is focused on mapping spatial data.  For more on working with and analyzing spatial data in R, see the <view>Spatial Task View</view>.
 
 <h2>
 Mapping tools in R
@@ -39,7 +39,10 @@ Mapping tools in R
 <pkg>plotGoogleMaps</pkg>: This package provides a interactive plot device for handling the geographic data for web browsers. It is designed for the automatic creation of web maps as a combination of users' data and Google Maps layers.
 </li>
 <li>
-<a href="https://github.com/jhollist/quickmapr">quickmpar</a>: Quick visualization of <pkg>sp</pkg> and <pkg>raster</pkg> objects.  Provides basic interactivity including zooming and panning (via <pkg>zoom</pkg>) as well as identifying features.  <a href="https://github.com/jhollist/quickmapr">Source on Github</a>
+<a href="https://github.com/jhollist/quickmapr">quickmpar</a>: Quick visualization of <pkg>sp</pkg> and <pkg>raster</pkg> objects.  Provides basic interactivity including zooming and panning as well as identifying features.  <a href="https://github.com/jhollist/quickmapr">Source on Github</a>
+</li>
+<li>
+<pkg>rasterVis</pkg>: Package for enchanced visualization of raster data. <a href="https://github.com/oscarperpinan/rastervis/">Source on Github</a>
 </li>
 <li>
 <pkg>Rgooglemaps</pkg>: Query Google static maps, and use the map as a background image to overlay plots within R. <a href="https://github.com/markusloecher/RgoogleMaps">Source on Github</a>
@@ -48,14 +51,14 @@ Mapping tools in R
 <a href="https://github.com/ramnathv/rMaps">rMaps</a>: A general purpose wrapper around man Javascript mapping libraries, including <a href="http://leafletjs.com/">Leaflet</a>, <a href="http://datamaps.github.io/">Datamaps</a>, and <a href="http://sztanko.github.io/crosslet/">Crosslet</a>. <a href="https://github.com/ramnathv/rMaps">Source on Github</a>
 </li>
 <li>
-<pkg>sp</pkg>: Core package in R for doing spatial data manipulation and analysis. Plotting capabilities in <pkg>sp</pkg> based on <pkg>lattice</pkg>. <a href="https://r-forge.r-project.org/projects/rspatial/">Source on R-Forge</a>
+<pkg>sp</pkg>: Core package in R for doing spatial data manipulation and analysis. Plotting capabilities in <pkg>sp</pkg> are provdied through some default plot methods.  More advanced plotting based on <pkg>lattice</pkg>. <a href="https://r-forge.r-project.org/projects/rspatial/">Source on R-Forge</a>
 </li>
 </ul>
 
 <p><strong>Projecting Data</strong></p>
-<p>Coordinates for spatial data can come in many different flavors with different units, different datums, different projections, and more.  Many of the tools will visualize your data regardless of the native coordinate reference system; however, most (all?) of the javascript libraries assume some flavor of lattitude-longitude, thus if your data are projected they need to be transformed back to geographic coordinates prior to mapping.  For most mapping and visulaization efforts unprojected data (often displayed in Web Mercator/EPSG::3857) is fine; however, if accuarate area, length, or distance measurements are required through interacting with the map, then projections need to be considered.  A discussion of projections and coordinate systems is beyond the scope of this task view.  To learn more a good starting place is [NCEAS' Overview of Coordinate Reference Systems in R](https://www.nceas.ucsb.edu/~frazier/RSpatialGuides/OverviewCoordinateReferenceSystems.pdf)</p>
+<p>Coordinates for spatial data can come in many different flavors with different units, datums, projections, and more.  Many of the tools will visualize your data regardless of the native coordinate reference system; however, most (all?) of the javascript libraries assume some flavor of lattitude-longitude, thus if your data are projected they need to be transformed back to geographic coordinates prior to mapping.  For most mapping and visulaization efforts unprojected data (often displayed in Web Mercator/EPSG::3857) is fine; however, if accuarate area, length, or distance measurements are required through interacting with the map, then projections need to be considered.  A discussion of projections and coordinate systems is beyond the scope of this task view.  To learn more a good starting place is [NCEAS' Overview of Coordinate Reference Systems in R](https://www.nceas.ucsb.edu/~frazier/RSpatialGuides/OverviewCoordinateReferenceSystems.pdf)</p>
 
-<p>Once you know that you need to transform you data into or out of a projection, there are several options:</p>
+<p>Once you know that you need to transform you data there are several options:</p>
 <ul>
 <li>
 <pkg>sp</pkg>: The function <code>spTransform</code> (and methods in <pkg>rgdal</pkg>) is the workhorse function for spatial transformations of vector data and it uses [PROJ.4](http://trac.osgeo.org/proj/) arguments to specify the transformations.  Accepted inputs are provided by the spTransform methods in <pkg>rgdal</pkg>.   <a href="https://r-forge.r-project.org/projects/rspatial/"> Source for <code>sp</code> on R-Forge</a>. <a href="https://r-forge.r-project.org/projects/rgdal/"> Source for <code>rgdal</code> on R-Forge</a>. 
@@ -128,11 +131,6 @@ raster: <pkg>raster</pkg>
 
 <packagelist>
   <pkg priority="core">sp</pkg>
-  <pkg>OpenStreetMap</pkg>
-  <pkg>PBSmapping</pkg>
-  <pkg>Rgooglemaps</pkg>
-  <pkg>USAboundaries</pkg>
-  <pkg>UScensus2010</pkg>
   <pkg>geocodeHERE</pkg>
   <pkg>geomapdata</pkg>
   <pkg>geonames</pkg>
@@ -143,12 +141,17 @@ raster: <pkg>raster</pkg>
   <pkg>maps</pkg>
   <pkg>maptools</pkg>
   <pkg>micromap</pkg>
+  <pkg>OpenStreetMap</pkg>
   <pkg>osmar</pkg>
+  <pkg>PBSmapping</pkg>
   <pkg>plotGoogleMaps</pkg>
   <pkg>raster</pkg>
+  <pkg>rasterVis</pkg>
   <pkg>rgdal</pkg>
+  <pkg>Rgooglemaps</pkg>
   <pkg>rworldmap</pkg>
-  <pkg>zoom</pkg>
+  <pkg>USAboundaries</pkg>
+  <pkg>UScensus2010</pkg>
 </packagelist>
 
 <links>

@@ -1,13 +1,11 @@
 CRAN Task View: Mapping tools and services
 ------------------------------------------
 
-  ----------------- --------------------------------------------------------------------------------------
-  **Maintainer:**   Jeff Hollister, Karthik Ram, Hadley Wickham, Scott Chamberlain, Ramnath Vaidyanathan
+  ----------------- ------------------------------------------------------------------------------------------
+  **Maintainer:**   Jeff Hollister, Scott Chamberlain, Karthik Ram, Hadley Wickham, Ben Marwick, Cory Nissen
   **Contact:**      hollister.jeff at epa.gov
-  **Version:**      2015-02-07
-  ----------------- --------------------------------------------------------------------------------------
-
-
+  **Version:**      2015-02-27
+  ----------------- ------------------------------------------------------------------------------------------
 
 This task view contains information about mapping and visualizing
 spatial data in R. The base version of R does not ship with many tools
@@ -24,7 +22,8 @@ email](mailto:hollister.jeff@epa.gov). If you have an issue with one of
 the packages discussed below, please contact the maintainer of that
 package. This task view is focused on mapping spatial data. For more on
 working with and analyzing spatial data in R, see the [Spatial Task
-View](http://cran.r-project.org/web/views/Spatial.html).
+View](Spatial%20Task%20View.html).
+
 Mapping tools in R
 ------------------
 
@@ -63,9 +62,11 @@ Mapping tools in R
     [sp](http://cran.r-project.org/web/packages/sp/index.html) and
     [raster](http://cran.r-project.org/web/packages/raster/index.html)
     objects. Provides basic interactivity including zooming and panning
-    (via [zoom](http://cran.r-project.org/web/packages/zoom/index.html))
     as well as identifying features. [Source on
     Github](https://github.com/jhollist/quickmapr)
+-   [rasterVis](http://cran.r-project.org/web/packages/rasterVis/index.html):
+    Package for enchanced visualization of raster data. [Source on
+    Github](https://github.com/oscarperpinan/rastervis/)
 -   [Rgooglemaps](http://cran.r-project.org/web/packages/Rgooglemaps/index.html):
     Query Google static maps, and use the map as a background image to
     overlay plots within R. [Source on
@@ -79,7 +80,9 @@ Mapping tools in R
 -   [sp](http://cran.r-project.org/web/packages/sp/index.html): Core
     package in R for doing spatial data manipulation and analysis.
     Plotting capabilities in
-    [sp](http://cran.r-project.org/web/packages/sp/index.html) based on
+    [sp](http://cran.r-project.org/web/packages/sp/index.html) are
+    provdied through some default plot methods. More advanced plotting
+    based on
     [lattice](http://cran.r-project.org/web/packages/lattice/index.html).
     [Source on
     R-Forge](https://r-forge.r-project.org/projects/rspatial/)
@@ -87,22 +90,22 @@ Mapping tools in R
 ### Projecting Data
 
 Coordinates for spatial data can come in many different flavors with
-different units, different datums, different projections, and more. Many
-of the tools will visualize your data regardless of the native
-coordinate reference system; however, most (all?) of the javascript
-libraries assume some flavor of lattitude-longitude, thus if your data
-are projected they need to be transformed back to geographic coordinates
-prior to mapping. For most mapping and visulaization efforts unprojected
-data (often displayed in Web Mercator/EPSG::3857) is fine; however, if
-accuarate area, length, or distance measurements are required through
-interacting with the map, then projections need to be considered. A
-discussion of projections and coordinate systems is beyond the scope of
-this task view. To learn more a good starting place is [NCEAS' Overview
-of Coordinate Reference Systems in
+different units, datums, projections, and more. Many of the tools will
+visualize your data regardless of the native coordinate reference
+system; however, most (all?) of the javascript libraries assume some
+flavor of lattitude-longitude, thus if your data are projected they need
+to be transformed back to geographic coordinates prior to mapping. For
+most mapping and visulaization efforts unprojected data (often displayed
+in Web Mercator/EPSG::3857) is fine; however, if accuarate area, length,
+or distance measurements are required through interacting with the map,
+then projections need to be considered. A discussion of projections and
+coordinate systems is beyond the scope of this task view. To learn more
+a good starting place is [NCEAS' Overview of Coordinate Reference
+Systems in
 R](https://www.nceas.ucsb.edu/\~frazier/RSpatialGuides/OverviewCoordinateReferenceSystems.pdf)
 
-Once you know that you need to transform you data into or out of a
-projection, there are several options:
+Once you know that you need to transform you data there are several
+options:
 
 -   [sp](http://cran.r-project.org/web/packages/sp/index.html): The
     function `spTransform` (and methods in
@@ -170,8 +173,6 @@ projection, there are several options:
 -   raster:
     [raster](http://cran.r-project.org/web/packages/raster/index.html)
 
-
-
 ### CRAN packages:
 
 -   [geocodeHERE](http://cran.r-project.org/web/packages/geocodeHERE/index.html)
@@ -189,13 +190,13 @@ projection, there are several options:
 -   [PBSmapping](http://cran.r-project.org/web/packages/PBSmapping/index.html)
 -   [plotGoogleMaps](http://cran.r-project.org/web/packages/plotGoogleMaps/index.html)
 -   [raster](http://cran.r-project.org/web/packages/raster/index.html)
+-   [rasterVis](http://cran.r-project.org/web/packages/rasterVis/index.html)
 -   [rgdal](http://cran.r-project.org/web/packages/rgdal/index.html)
 -   [Rgooglemaps](http://cran.r-project.org/web/packages/Rgooglemaps/index.html)
 -   [rworldmap](http://cran.r-project.org/web/packages/rworldmap/index.html)
 -   [sp](http://cran.r-project.org/web/packages/sp/index.html) (core)
 -   [USAboundaries](http://cran.r-project.org/web/packages/USAboundaries/index.html)
 -   [UScensus2010](http://cran.r-project.org/web/packages/UScensus2010/index.html)
--   [zoom](http://cran.r-project.org/web/packages/zoom/index.html)
 
 ### Related links:
 
