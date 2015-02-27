@@ -23,8 +23,8 @@ sedtoc:
 	sed 's@</div>@@g' README5.md > README.md
 
 fixctv:
-	sed 's@[^<p><strong>].*endhref@@g' MappingTools.ctv > webtech1.ctv
-	sed 's@>to@>@g' webtech1.ctv > MappingTools.ctv
+	sed 's@[^<p><strong>].*endhref@@g' MappingTools.ctv > MappingTools1.ctv
+	sed 's@>to@>@g' MappingTools1.ctv > MappingTools.ctv
 
 cleanup:
-	rm doc.html doc2.html doc3.html doc4.html README_prep.md README2.md README3.md README4.md README5.md webtech1.ctv
+	rm doc.html doc2.html doc3.html doc4.html README_prep.md README2.md README3.md README4.md README5.md MappingTools1.ctv
