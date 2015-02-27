@@ -1,12 +1,13 @@
 CRAN Task View: Mapping tools and services
 ------------------------------------------
 
-  ------------------------------------ ------------------------------------
-  **Maintainer:**                      **Contact:**
-  Jeff Hollister, Karthik Ram, Hadley  hollister.jeff at epa.gov
-  Wickham, Scott Chamberlain, Ramnath  
-  Vaidyanathan                         
-  ------------------------------------ ------------------------------------
+  ----------------- --------------------------------------------------------------------------------------
+  **Maintainer:**   Jeff Hollister, Karthik Ram, Hadley Wickham, Scott Chamberlain, Ramnath Vaidyanathan
+  **Contact:**      hollister.jeff at epa.gov
+  **Version:**      2015-02-07
+  ----------------- --------------------------------------------------------------------------------------
+
+
 
 This task view contains information about mapping and visualizing
 spatial data in R. The base version of R does not ship with many tools
@@ -24,7 +25,6 @@ the packages discussed below, please contact the maintainer of that
 package. This task view is focused on mapping spatial data. For more on
 working with and analyzing spatial data in R, see the [Spatial Task
 View](http://cran.r-project.org/web/views/Spatial.html).
-
 Mapping tools in R
 ------------------
 
@@ -149,6 +149,14 @@ projection, there are several options:
 -   [osmar](http://cran.r-project.org/web/packages/osmar/index.html)
 -   [UScensus2010](http://cran.r-project.org/web/packages/UScensus2010/index.html)
 -   [geomapdata](http://cran.r-project.org/web/packages/geomapdata/index.html)
+-   [geonames](http://cran.r-project.org/web/packages/geonames/index.html):
+    functions for working with [geonames](http://www.geonames.org/), a
+    geographical database that covers all countries and contains over
+    eight million placenames
+-   [USAboundaries](http://cran.r-project.org/web/packages/USAboundaries/index.html):
+    provides spatial objects with the boundaries of states or counties
+    in the United States of America from 1629 to 2000. It provides data
+    from the Atlas of Historical County Boundaries.
 
 ### Map Data I/O
 
@@ -162,10 +170,13 @@ projection, there are several options:
 -   raster:
     [raster](http://cran.r-project.org/web/packages/raster/index.html)
 
+
+
 ### CRAN packages:
 
 -   [geocodeHERE](http://cran.r-project.org/web/packages/geocodeHERE/index.html)
 -   [geomapdata](http://cran.r-project.org/web/packages/geomapdata/index.html)
+-   [geonames](http://cran.r-project.org/web/packages/geonames/index.html)
 -   [ggmap](http://cran.r-project.org/web/packages/ggmap/index.html)
 -   [lattice](http://cran.r-project.org/web/packages/lattice/index.html)
 -   [leafletR](http://cran.r-project.org/web/packages/leafletR/index.html)
@@ -182,6 +193,7 @@ projection, there are several options:
 -   [Rgooglemaps](http://cran.r-project.org/web/packages/Rgooglemaps/index.html)
 -   [rworldmap](http://cran.r-project.org/web/packages/rworldmap/index.html)
 -   [sp](http://cran.r-project.org/web/packages/sp/index.html) (core)
+-   [USAboundaries](http://cran.r-project.org/web/packages/USAboundaries/index.html)
 -   [UScensus2010](http://cran.r-project.org/web/packages/UScensus2010/index.html)
 -   [zoom](http://cran.r-project.org/web/packages/zoom/index.html)
 
