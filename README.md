@@ -72,7 +72,7 @@ Mapping tools in R
     overlay plots within R. [Source on
     Github](https://github.com/markusloecher/RgoogleMaps)
 -   [rMaps](https://github.com/ramnathv/rMaps): A general purpose
-    wrapper around man Javascript mapping libraries, including
+    wrapper around main Javascript mapping libraries, including
     [Leaflet](http://leafletjs.com/),
     [Datamaps](http://datamaps.github.io/), and
     [Crosslet](http://sztanko.github.io/crosslet/). [Source on
