@@ -130,6 +130,9 @@ options:
 
 ### Geocoding
 
+Geocoding is the process of converting address or place name information
+into geographic coordinates.
+
 -   [geocodeHERE](http://cran.r-project.org/web/packages/geocodeHERE/index.html):
     Client for Nokia's [HERE geocoding
     API](https://developer.here.com/geocoder). [Source on
@@ -139,7 +142,7 @@ options:
     [ggmap](http://cran.r-project.org/web/packages/ggmap/index.html)
     uses the [Google Geocoding
     API](https://developers.google.com/maps/documentation/geocoding/?csw=1).
-    [Source on Github](https://github.com/)
+    [Source on Github](https://github.com/dkahle/ggmap)
 -   [rydn](https://github.com/trestletech/rydn): Client for the Yahoo!
     Developers Network [BOSS PlaceFinder
     API](https://developer.yahoo.com/boss/). [Source on
@@ -147,11 +150,36 @@ options:
 
 ### Sources of Map Data
 
--   [maps](http://cran.r-project.org/web/packages/maps/index.html)
--   [rworldmap](http://cran.r-project.org/web/packages/rworldmap/index.html)
--   [osmar](http://cran.r-project.org/web/packages/osmar/index.html)
--   [UScensus2010](http://cran.r-project.org/web/packages/UScensus2010/index.html)
--   [geomapdata](http://cran.r-project.org/web/packages/geomapdata/index.html)
+There are \*many\* possible sources of data to use as base layers, so
+this list will most certainly be incomplete. If you have any suggest
+additions, please use the [Github
+Issues](https://github.com/ropensci/maptools/issues).
+
+-   [maps](http://cran.r-project.org/web/packages/maps/index.html):
+    Collection of coarse scaled for the US, some European countries, and
+    a world map. Stored as \`map\` objects and various other geographic
+    datasets. Location information in decimal degrees. Needs coversion
+    to work with visualization from
+    [sp](http://cran.r-project.org/web/packages/sp/index.html),
+    [ggmap](http://cran.r-project.org/web/packages/ggmap/index.html),
+    etc. Code for projections and additional maps in packages
+    [mapproj](http://cran.r-project.org/web/packages/mapproj/index.html)
+    [mapdata](http://cran.r-project.org/web/packages/mapdata/index.html).
+-   [rworldmap](http://cran.r-project.org/web/packages/rworldmap/index.html):
+    Set of functions to create country based world maps. Allows for
+    joining of user specified data and can display chloropleth, gridded,
+    bubble plot, bar charts, or pie charts. Data stored as \`sp\`
+    objects. [Source on Google
+    Code.](https://code.google.com/p/rworld/downloads/list)
+-   [osmar](http://cran.r-project.org/web/packages/osmar/index.html):
+    Package for interacting with the Open Street Map API in R. Functions
+    for converting an open street map object into
+    [sp](http://cran.r-project.org/web/packages/sp/index.html) or
+    [igraph](http://cran.r-project.org/web/packages/igraph/index.html)
+    objects. [Source on
+    R-Forge.](https://r-forge.r-project.org/projects/osmar/)
+-   [UScensus2010](http://cran.r-project.org/web/packages/UScensus2010/index.html):
+-   [geomapdata](http://cran.r-project.org/web/packages/geomapdata/index.html):
 -   [geonames](http://cran.r-project.org/web/packages/geonames/index.html):
     functions for working with [geonames](http://www.geonames.org/), a
     geographical database that covers all countries and contains over
@@ -179,8 +207,10 @@ options:
 -   [geomapdata](http://cran.r-project.org/web/packages/geomapdata/index.html)
 -   [geonames](http://cran.r-project.org/web/packages/geonames/index.html)
 -   [ggmap](http://cran.r-project.org/web/packages/ggmap/index.html)
+-   [igraph](http://cran.r-project.org/web/packages/igraph/index.html)
 -   [lattice](http://cran.r-project.org/web/packages/lattice/index.html)
 -   [leafletR](http://cran.r-project.org/web/packages/leafletR/index.html)
+-   [mapdata](http://cran.r-project.org/web/packages/mapdata/index.html)
 -   [mapproj](http://cran.r-project.org/web/packages/mapproj/index.html)
 -   [maps](http://cran.r-project.org/web/packages/maps/index.html)
 -   [maptools](http://cran.r-project.org/web/packages/maptools/index.html)

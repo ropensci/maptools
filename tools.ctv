@@ -113,68 +113,107 @@ Mapping tools in R
 <p>Once you know that you need to transform you data there are several options:</p>
 <ul>
 <li>
-<pkg>sp</pkg>: The function <code>spTransform</code> (and methods in <pkg>rgdal</pkg>) is the workhorse function for spatial transformations of vector data and it uses [PROJ.4](http://trac.osgeo.org/proj/) arguments to specify the transformations.  Accepted inputs are provided by the spTransform methods in <pkg>rgdal</pkg>.   <a href="https://r-forge.r-project.org/projects/rspatial/"> Source for <code>sp</code> on R-Forge</a>. <a href="https://r-forge.r-project.org/projects/rgdal/"> Source for <code>rgdal</code> on R-Forge</a>.
+  <pkg>sp</pkg>: The function <code>spTransform</code> (and methods in
+  <pkg>rgdal</pkg>) is the workhorse function for spatial transformations of
+  vector data and it uses [PROJ.4](http://trac.osgeo.org/proj/) arguments to
+  specify the transformations.  Accepted inputs are provided by the spTransform
+  methods in <pkg>rgdal</pkg>.   <a href="https://r-forge.r-project.org/projects/rspatial/">
+  Source for <code>sp</code> on R-Forge</a>. <a href="https://r-forge.r-project.org/projects/rgdal/">
+  Source for <code>rgdal</code> on R-Forge</a>.
 </li>
-<pkg>raster</pkg>: Use <code>rasterProject()</code> to project rasters. Projecting rasters is a bit different than vector as the transformation results in a rotated grid which require some interpolation to map the original cell values to the new cell values. Dealing with this requires a separate funciton and <code>rasterProject()</code> has options for dealing with the interpolation.
+  <pkg>raster</pkg>: Use <code>rasterProject()</code> to project rasters.
+  Projecting rasters is a bit different than vector as the transformation results
+  in a rotated grid which require some interpolation to map the original cell
+  values to the new cell values. Dealing with this requires a separate funciton
+  and <code>rasterProject()</code> has options for dealing with the interpolation.
 <li>
-<pkg>mapproj</pkg>: This package provides a fucntion to convert two vectors representing longitude (x) and  lattitude (y) to projected coordinates.
+  <pkg>mapproj</pkg>: This package provides a fucntion to convert two vectors
+  representing longitude (x) and  lattitude (y) to projected coordinates.
 </li>
 <li>
-<pkg>PBSmapping</pkg>: The function <code>convUL</code> will transform coordinates between Universal Transverse Mercator (UTM) and longitude-latitude. A data frame with a <code>projection</code> attribute is required input. <a href="http://code.google.com/p/pbs-software/">Source on Google Code</a>
+  <pkg>PBSmapping</pkg>: The function <code>convUL</code> will transform
+  coordinates between Universal Transverse Mercator (UTM) and longitude-latitude.
+  A data frame with a <code>projection</code> attribute is required input.
+  <a href="http://code.google.com/p/pbs-software/">Source on Google Code</a>
 </li>
 </ul>
 
 <p><strong>Geocoding</strong></p>
+<p>Geocoding is the process of converting address or place name information into
+  geographic coordinates. </p>
 <ul>
 <li>
-<pkg>geocodeHERE</pkg>: Client for Nokia's <a href="https://developer.here.com/geocoder">HERE geocoding API</a>. <a href="https://github.com/corynissen/geocodeHERE/">Source on GitHub</a>
+  <pkg>geocodeHERE</pkg>: Client for Nokia's
+  <a href="https://developer.here.com/geocoder">HERE geocoding API</a>.
+  <a href="https://github.com/corynissen/geocodeHERE/">Source on GitHub</a>
 </li>
 <li>
-<pkg>ggmap</pkg>: The function <code>geocode</code> in <pkg>ggmap</pkg> uses the <a href="https://developers.google.com/maps/documentation/geocoding/?csw=1">Google Geocoding API</a>. <a href="https://github.com/">Source on Github</a>
+  <pkg>ggmap</pkg>: The function <code>geocode</code> in <pkg>ggmap</pkg> uses
+  the <a href="https://developers.google.com/maps/documentation/geocoding/?csw=1">Google Geocoding API</a>.
+  <a href="https://github.com/dkahle/ggmap">Source on Github</a>
 </li>
 <li>
-<a href="https://github.com/trestletech/rydn">rydn</a>: Client for the Yahoo! Developers Network <a href="https://developer.yahoo.com/boss/">BOSS PlaceFinder API</a>. <a href="https://github.com/trestletech/rydn">Source on Github</a>
+  <a href="https://github.com/trestletech/rydn">rydn</a>: Client for the Yahoo!
+  Developers Network <a href="https://developer.yahoo.com/boss/">BOSS PlaceFinder API</a>.
+  <a href="https://github.com/trestletech/rydn">Source on Github</a>
 </li>
 </ul>
 
 <p><strong>Sources of Map Data</strong></p>
+<p>There are *many* possible sources of data to use as base layers, so this list
+will most certainly be incomplete.  If you have any suggest additions, please use
+the [Github Issues](https://github.com/ropensci/maptools/issues).</p>
 <ul>
 <li>
-<pkg>maps</pkg>
+  <pkg>maps</pkg>: Collection of coarse scaled for the US, some European
+  countries, and a world map.  Stored as  `map` objects and various other
+  geographic datasets.  Location information in decimal degrees.  Needs coversion
+  to work with visualization from <pkg>sp</pkg>, <pkg>ggmap</pkg>, etc.  Code for
+  projections and additional maps in packages <pkg>mapproj</pkg> <pkg>mapdata</pkg>.
 </li>
 <li>
-<pkg>rworldmap</pkg>
+  <pkg>rworldmap</pkg>: Set of functions to create country based world maps.
+  Allows for joining of user specified data and can display chloropleth, gridded,
+  bubble plot, bar charts, or pie charts. Data stored as `sp` objects.
+  <a href="https://code.google.com/p/rworld/downloads/list">Source on Google Code.</a>
 </li>
 <li>
-<pkg>osmar</pkg>
+  <pkg>osmar</pkg>: Package for interacting with the Open Street Map API in R.
+  Functions for converting an open street map object into <pkg>sp</pkg> or
+  <pkg>igraph</pkg> objects.
+  <a href="https://r-forge.r-project.org/projects/osmar/">Source on R-Forge.</a>
 </li>
 <li>
-<pkg>UScensus2010</pkg>
+  <pkg>UScensus2010</pkg>:
 </li>
 <li>
-<pkg>geomapdata</pkg>
+  <pkg>geomapdata</pkg>:
 </li>
 <li>
-<pkg>geonames</pkg>: functions for working with <a href="http://www.geonames.org/">geonames</a>, a geographical database that covers all countries and contains over eight million placenames
+  <pkg>geonames</pkg>: functions for working with
+  <a href="http://www.geonames.org/">geonames</a>, a geographical database that
+  covers all countries and contains over eight million placenames
 </li>
 <li>
-<pkg>USAboundaries</pkg>: provides spatial objects with the boundaries of states or counties in the United States of America from 1629 to 2000. It provides data from the Atlas of Historical County Boundaries.
+  <pkg>USAboundaries</pkg>: provides spatial objects with the boundaries of states
+  or counties in the United States of America from 1629 to 2000. It provides data
+  from the Atlas of Historical County Boundaries.
 </li>
 </ul>
 
 <p><strong>Map Data I/O</strong></p>
 <ul>
 <li>
-shapefiles: <pkg>maptools</pkg>, <pkg>rgdal</pkg>
+  shapefiles: <pkg>maptools</pkg>, <pkg>rgdal</pkg>
 </li>
 <li>
-topo- and geo- json: <pkg>rgdal</pkg>, geojsonio
+  topo- and geo- json: <pkg>rgdal</pkg>, geojsonio
 </li>
 <li>
-kml
+  kml
 </li>
 <li>
-raster: <pkg>raster</pkg>
+  raster: <pkg>raster</pkg>
 </li>
 </ul>
 
