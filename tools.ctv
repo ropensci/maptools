@@ -184,7 +184,10 @@ the [Github Issues](https://github.com/ropensci/maptools/issues).</p>
   <a href="https://r-forge.r-project.org/projects/osmar/">Source on R-Forge.</a>
 </li>
 <li>
-  <pkg>UScensus2010</pkg>:
+  <pkg>UScensus2010</pkg>: Functions to facilitate accessing data from
+  the 2010 US Census using a suite of packages.  Includes spatial data for census geographies (e.g. tracts,
+  blocks, block groups, etc.).  This packages is the third is a series of
+  related package suites: <pkg>UScensus1990blkgrp</pkg> and <pkg>UScensus2000</pkg>.    
 </li>
 <li>
   <pkg>geomapdata</pkg>:
