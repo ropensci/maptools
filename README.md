@@ -179,7 +179,13 @@ Issues](https://github.com/ropensci/maptools/issues).
     objects. [Source on
     R-Forge.](https://r-forge.r-project.org/projects/osmar/)
 -   [UScensus2010](http://cran.r-project.org/web/packages/UScensus2010/index.html):
--   [geomapdata](http://cran.r-project.org/web/packages/geomapdata/index.html):
+    Functions to facilitate accessing data from the 2010 US Census using
+    a suite of packages. Includes spatial data for census geographies
+    (e.g. tracts, blocks, block groups, etc.). This packages is the
+    third in a series of related package suites:
+    [UScensus1990blkgrp](http://cran.r-project.org/web/packages/UScensus1990blkgrp/index.html)
+    and
+    [UScensus2000](http://cran.r-project.org/web/packages/UScensus2000/index.html).
 -   [geonames](http://cran.r-project.org/web/packages/geonames/index.html):
     functions for working with [geonames](http://www.geonames.org/), a
     geographical database that covers all countries and contains over
@@ -204,7 +210,6 @@ Issues](https://github.com/ropensci/maptools/issues).
 ### CRAN packages:
 
 -   [geocodeHERE](http://cran.r-project.org/web/packages/geocodeHERE/index.html)
--   [geomapdata](http://cran.r-project.org/web/packages/geomapdata/index.html)
 -   [geonames](http://cran.r-project.org/web/packages/geonames/index.html)
 -   [ggmap](http://cran.r-project.org/web/packages/ggmap/index.html)
 -   [igraph](http://cran.r-project.org/web/packages/igraph/index.html)
@@ -226,6 +231,8 @@ Issues](https://github.com/ropensci/maptools/issues).
 -   [rworldmap](http://cran.r-project.org/web/packages/rworldmap/index.html)
 -   [sp](http://cran.r-project.org/web/packages/sp/index.html) (core)
 -   [USAboundaries](http://cran.r-project.org/web/packages/USAboundaries/index.html)
+-   [UScensus1990blkgrp](http://cran.r-project.org/web/packages/UScensus1990blkgrp/index.html)
+-   [UScensus2000](http://cran.r-project.org/web/packages/UScensus2000/index.html)
 -   [UScensus2010](http://cran.r-project.org/web/packages/UScensus2010/index.html)
 
 ### Related links:
