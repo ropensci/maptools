@@ -202,18 +202,22 @@ the [Github Issues](https://github.com/ropensci/maptools/issues).</p>
 </ul>
 
 <p><strong>Map Data I/O</strong></p>
+<p>There are many packages the provide tools to both read and write vector and raster data using R.  Below are details on some of the most commonly encountered vector and raster file formats, including: shapefiles, topo- and geojson, KML/KMZ, tiff, and esri ascii grid.</p>
 <ul>
 <li>
-  shapefiles: <pkg>maptools</pkg>, <pkg>rgdal</pkg>
+  <pkg>rgdal</pkg>: 
 </li>
 <li>
-  topo- and geo- json: <pkg>rgdal</pkg>, geojsonio
+  <pkg>maptools</pkg>:
 </li>
 <li>
-  kml
+   geojsonio:
 </li>
 <li>
-  raster: <pkg>raster</pkg>
+  <pkg>plotKML</pkg>
+</li>
+<li>
+  <pkg>raster</pkg>
 </li>
 </ul>
 

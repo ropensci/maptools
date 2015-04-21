@@ -197,15 +197,16 @@ Issues](https://github.com/ropensci/maptools/issues).
 
 ### Map Data I/O
 
--   shapefiles:
-    [maptools](http://cran.r-project.org/web/packages/maptools/index.html),
-    [rgdal](http://cran.r-project.org/web/packages/rgdal/index.html)
--   topo- and geo- json:
-    [rgdal](http://cran.r-project.org/web/packages/rgdal/index.html),
-    geojsonio
--   kml
--   raster:
-    [raster](http://cran.r-project.org/web/packages/raster/index.html)
+There are many packages the provide tools to both read and write vector
+and raster data using R. Below are details on some of the most commonly
+encountered vector and raster file formats, including: shapefiles, topo-
+and geojson, KML/KMZ, tiff, and esri ascii grid.
+
+-   [rgdal](http://cran.r-project.org/web/packages/rgdal/index.html):
+-   [maptools](http://cran.r-project.org/web/packages/maptools/index.html):
+-   geojsonio:
+-   [plotKML](http://cran.r-project.org/web/packages/plotKML/index.html)
+-   [raster](http://cran.r-project.org/web/packages/raster/index.html)
 
 ### CRAN packages:
 
@@ -224,6 +225,7 @@ Issues](https://github.com/ropensci/maptools/issues).
 -   [osmar](http://cran.r-project.org/web/packages/osmar/index.html)
 -   [PBSmapping](http://cran.r-project.org/web/packages/PBSmapping/index.html)
 -   [plotGoogleMaps](http://cran.r-project.org/web/packages/plotGoogleMaps/index.html)
+-   [plotKML](http://cran.r-project.org/web/packages/plotKML/index.html)
 -   [raster](http://cran.r-project.org/web/packages/raster/index.html)
 -   [rasterVis](http://cran.r-project.org/web/packages/rasterVis/index.html)
 -   [rgdal](http://cran.r-project.org/web/packages/rgdal/index.html)
