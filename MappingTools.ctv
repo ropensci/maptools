@@ -199,6 +199,10 @@ the [Github Issues](https://github.com/ropensci/maptools/issues).</p>
   or counties in the United States of America from 1629 to 2000. It provides data
   from the Atlas of Historical County Boundaries.
 </li>
+<li>
+    <a href="https://github.com/sckott/openadds">openadds</a>: An R client for <a href="http://openaddresses.io">Openaddresses</a>.  The Openaddresses data comes in a variety of formats and this package provides common interface to simplify working with it in R.
+    <a href="https://github.com/sckott/openadds">Source on Github</a>
+</li>
 </ul>
 
 <p><strong>Map Data I/O</strong></p>

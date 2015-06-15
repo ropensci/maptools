@@ -194,6 +194,11 @@ Issues](https://github.com/ropensci/maptools/issues).
     provides spatial objects with the boundaries of states or counties
     in the United States of America from 1629 to 2000. It provides data
     from the Atlas of Historical County Boundaries.
+-   [openadds](https://github.com/sckott/openadds): An R client for
+    [Openaddresses](http://openaddresses.io). The Openaddresses data
+    comes in a variety of formats and this package provides common
+    interface to simplify working with it in R. [Source on
+    Github](https://github.com/sckott/openadds)
 
 ### Map Data I/O
 
