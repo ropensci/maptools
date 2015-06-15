@@ -4,7 +4,7 @@ CRAN Task View: Mapping tools and services
   ----------------- ------------------------------------------------------------------------------------------
   **Maintainer:**   Jeff Hollister, Scott Chamberlain, Karthik Ram, Hadley Wickham, Ben Marwick, Cory Nissen
   **Contact:**      hollister.jeff at epa.gov
-  **Version:**      2015-02-27
+  **Version:**      2015-06-15
   ----------------- ------------------------------------------------------------------------------------------
 
 This task view contains information about mapping and visualizing
