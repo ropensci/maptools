@@ -4,7 +4,7 @@
 <topic>Mapping tools and services</topic>
 <maintainer email="hollister.jeff@epa.gov">Jeff Hollister, Scott Chamberlain,
     Karthik Ram, Hadley Wickham, Ben Marwick, Cory Nissen</maintainer>
-<version>2015-02-27</version>
+<version>2015-06-15</version>
 
 <info> This task view contains information about mapping and visualizing spatial
 data in R.  The base version of R does not ship with many tools for mapping
