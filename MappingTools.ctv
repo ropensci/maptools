@@ -213,16 +213,16 @@ the [Github Issues](https://github.com/ropensci/maptools/issues).</p>
   <pkg>rgdal</pkg>: R interface to the Geospatial Data Abstraction Library (GDAL).  This is the primary tool for reading and writing spatial data formats from R.  Support for many vector formats (e.g.  shapefiles, geojson, topojson, KML) is available through `readOGR()` and `writeOGR()`.  Raster support is available from `readGDAL()` and `writeGDAL()`.  Binaries for GDAL are pre-built for windows, but GDAL needs to be installed separately for linux and Mac.  
 </li>
 <li>
-  <pkg>maptools</pkg>:
+  <pkg>maptools</pkg>: Another set of tools to faciliate reading spaital data.  Focus is on shapefiles and also provides conversions between many other R spatial packages.
 </li>
 <li>
    <pkg>geojsonio</pkg>: Provides utility for working with geojson data in R.  Includes functions to convert sp objects, lists, and character to geojson format.
 </li>
 <li>
-  <pkg>plotKML</pkg>: 
+  <pkg>plotKML</pkg>: Provides functions to convert from sp-classes into KML/KMZ.
 </li>
 <li>
-  <pkg>raster</pkg>: The `raster` package provides an alternative to `rgdal` for working with raster data.  One of the primary benefits of using this package is that it will work with large rasters by reading data from disk without pulling into memory.  Several additional utilities for working with raster data are provided.
+  <pkg>raster</pkg>: The `raster` package provides an alternative to `rgdal` for reading in raster data.  One of the primary benefits of using this package is that it will work with large rasters by reading data from disk without pulling into memory.  Several additional utilities for working with raster data are provided.
 </li>
 </ul>
 

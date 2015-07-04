@@ -224,14 +224,18 @@ and geojson, KML/KMZ, raster, and esri ascii grid.
     \`writeGDAL()\`. Binaries for GDAL are pre-built for windows, but
     GDAL needs to be installed separately for linux and Mac.
 -   [maptools](http://cran.r-project.org/web/packages/maptools/index.html):
+    Another set of tools to faciliate reading spaital data. Focus is on
+    shapefiles and also provides conversions between many other R
+    spatial packages.
 -   [geojsonio](http://cran.r-project.org/web/packages/geojsonio/index.html):
     Provides utility for working with geojson data in R. Includes
     functions to convert sp objects, lists, and character to geojson
     format.
 -   [plotKML](http://cran.r-project.org/web/packages/plotKML/index.html):
+    Provides functions to convert from sp-classes into KML/KMZ.
 -   [raster](http://cran.r-project.org/web/packages/raster/index.html):
     The \`raster\` package provides an alternative to \`rgdal\` for
-    working with raster data. One of the primary benefits of using this
+    reading in raster data. One of the primary benefits of using this
     package is that it will work with large rasters by reading data from
     disk without pulling into memory. Several additional utilities for
     working with raster data are provided.
