@@ -46,7 +46,10 @@ Mapping tools in R
   <a href="https://github.com/dkahle/ggmap">Source on Github</a>
 </li>
 <li>
-  <pkg>leafletR</pkg>: Client for the JavaScript library Leaflet.js. Basic mapping
+  <pkg>leaflet</pkg>: Client for the JavaScript library Leaflet.js.  Uses <pkg>htmlwidgets</pkg> to provide structure for output.  Integrated with R Console,RStudio, and R Markdown v 2.  Can include interactive maps with markdown documents as well as with <pkg>shiny</pkg> apps.  <a href="https://github.com/rstudio/leaflet">Source on Github</a>
+</li>
+<li>
+  <pkg>leafletR</pkg>: Another client for the JavaScript library Leaflet.js. Basic mapping
     functionality to combine vector data and online map tiles from different
     sources. <a href="https://github.com/chgrl/leafletR">Source on Github</a>
 </li>
@@ -57,7 +60,7 @@ Mapping tools in R
   Github.</a>
 </li>
 <li>
-  <pkg>OpenStreetMap</pkg>: An R client for the Open Stree Maps API.
+  <pkg>OpenStreetMap</pkg>: An R client for the Open Street Maps API.
   <a href="https://github.com/">Source on Github</a>
 </li>
 <li>
@@ -117,9 +120,7 @@ Mapping tools in R
   <pkg>rgdal</pkg>) is the workhorse function for spatial transformations of
   vector data and it uses [PROJ.4](http://trac.osgeo.org/proj/) arguments to
   specify the transformations.  Accepted inputs are provided by the spTransform
-  methods in <pkg>rgdal</pkg>.   <a href="https://r-forge.r-project.org/projects/rspatial/">
-  Source for <code>sp</code> on R-Forge</a>. <a href="https://r-forge.r-project.org/projects/rgdal/">
-  Source for <code>rgdal</code> on R-Forge</a>.
+  methods in <pkg>rgdal</pkg>.   <a href="https://r-forge.r-project.org/projects/rspatial/"> Source for <code>sp</code> on R-Forge</a>. <a href="https://r-forge.r-project.org/projects/rgdal/"> Source for <code>rgdal</code> on R-Forge</a>.
 </li>
   <pkg>raster</pkg>: Use <code>rasterProject()</code> to project rasters.
   Projecting rasters is a bit different than vector as the transformation results
@@ -206,22 +207,22 @@ the [Github Issues](https://github.com/ropensci/maptools/issues).</p>
 </ul>
 
 <p><strong>Map Data I/O</strong></p>
-<p>There are many packages the provide tools to both read and write vector and raster data using R.  Below are details on some of the most commonly encountered vector and raster file formats, including: shapefiles, topo- and geojson, KML/KMZ, tiff, and esri ascii grid.</p>
+<p>There are many packages that provide tools to both read and write vector and raster data using R.  Below are details on some of the most commonly encountered vector and raster file formats, including: shapefiles, topo- and geojson, KML/KMZ, raster, and esri ascii grid.</p>
 <ul>
 <li>
-  <pkg>rgdal</pkg>: 
+  <pkg>rgdal</pkg>: R interface to the Geospatial Data Abstraction Library (GDAL).  This is the primary tool for reading and writing spatial data formats from R.  Support for many vector formats (e.g.  shapefiles, geojson, topojson, KML) is available through `readOGR()` and `writeOGR()`.  Raster support is available from `readGDAL()` and `writeGDAL()`.  Binaries for GDAL are pre-built for windows, but GDAL needs to be installed separately for linux and Mac.  
 </li>
 <li>
   <pkg>maptools</pkg>:
 </li>
 <li>
-   geojsonio:
+   <pkg>geojsonio</pkg>: Provides utility for working with geojson data in R.  Includes functions to convert sp objects, lists, and character to geojson format.
 </li>
 <li>
-  <pkg>plotKML</pkg>
+  <pkg>plotKML</pkg>: 
 </li>
 <li>
-  <pkg>raster</pkg>
+  <pkg>raster</pkg>: The `raster` package provides an alternative to `rgdal` for working with raster data.  One of the primary benefits of using this package is that it will work with large rasters by reading data from disk without pulling into memory.  Several additional utilities for working with raster data are provided.
 </li>
 </ul>
 
@@ -231,10 +232,13 @@ the [Github Issues](https://github.com/ropensci/maptools/issues).</p>
 <packagelist>
   <pkg priority="core">sp</pkg>
   <pkg>geocodeHERE</pkg>
+  <pkg>geojsonio</pkg>
   <pkg>geonames</pkg>
   <pkg>ggmap</pkg>
+  <pkg>htmlwidgets</pkg>
   <pkg>igraph</pkg>
   <pkg>lattice</pkg>
+  <pkg>leaflet</pkg>
   <pkg>leafletR</pkg>
   <pkg>mapdata</pkg>
   <pkg>mapproj</pkg>
@@ -251,6 +255,7 @@ the [Github Issues](https://github.com/ropensci/maptools/issues).</p>
   <pkg>rgdal</pkg>
   <pkg>Rgooglemaps</pkg>
   <pkg>rworldmap</pkg>
+  <pkg>shiny</pkg>
   <pkg>USAboundaries</pkg>
   <pkg>UScensus1990blkgrp</pkg>
   <pkg>UScensus2000</pkg>
@@ -258,8 +263,11 @@ the [Github Issues](https://github.com/ropensci/maptools/issues).</p>
 </packagelist>
 
 <links>
-	<a href="https://github.com/ramnathv/rMaps">GitHub package: rMaps</a>
-	<a href="https://github.com/Vizzuality/cartodb-r">GitHub package: cartodb</a>
+  <a href="https://github.com/Vizzuality/cartodb-r">GitHub package: cartodb</a>
+  <a href="https://github.com/lmullen/cartographer">GitHub pacakge: cartographer</a>  
+  <a href="https://github.com/sckott/openadds">GitHub pacakge: openadds</a>	
+  <a href="https://github.com/jhollist/quickmapr">GitHub pacakge: quickmpar</a>
+  <a href="https://github.com/ramnathv/rMaps">GitHub package: rMaps</a>
   <a href="https://github.com/trestletech/rydn">GitHub package: rydn</a>
 </links>
 

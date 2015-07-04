@@ -40,8 +40,16 @@ Mapping tools in R
     Visualization of spatial data and models on top of Google Maps,
     OpenStreetMaps, Stamen Maps, or CloudMade Maps using ggplot2.
     [Source on Github](https://github.com/dkahle/ggmap)
+-   [leaflet](http://cran.r-project.org/web/packages/leaflet/index.html):
+    Client for the JavaScript library Leaflet.js. Uses
+    [htmlwidgets](http://cran.r-project.org/web/packages/htmlwidgets/index.html)
+    to provide structure for output. Integrated with R Console,RStudio,
+    and R Markdown v 2. Can include interactive maps with markdown
+    documents as well as with
+    [shiny](http://cran.r-project.org/web/packages/shiny/index.html)
+    apps. [Source on Github](https://github.com/rstudio/leaflet)
 -   [leafletR](http://cran.r-project.org/web/packages/leafletR/index.html):
-    Client for the JavaScript library Leaflet.js. Basic mapping
+    Another client for the JavaScript library Leaflet.js. Basic mapping
     functionality to combine vector data and online map tiles from
     different sources. [Source on
     Github](https://github.com/chgrl/leafletR)
@@ -50,7 +58,7 @@ Mapping tools in R
     plots, and uses ggplot2 plotting framework. [Source on
     Github.](https://github.com/USEPA/R-micromap-package-development)
 -   [OpenStreetMap](http://cran.r-project.org/web/packages/OpenStreetMap/index.html):
-    An R client for the Open Stree Maps API. [Source on
+    An R client for the Open Street Maps API. [Source on
     Github](https://github.com/)
 -   [plotGoogleMaps](http://cran.r-project.org/web/packages/plotGoogleMaps/index.html):
     This package provides a interactive plot device for handling the
@@ -202,24 +210,42 @@ Issues](https://github.com/ropensci/maptools/issues).
 
 ### Map Data I/O
 
-There are many packages the provide tools to both read and write vector
+There are many packages that provide tools to both read and write vector
 and raster data using R. Below are details on some of the most commonly
 encountered vector and raster file formats, including: shapefiles, topo-
-and geojson, KML/KMZ, tiff, and esri ascii grid.
+and geojson, KML/KMZ, raster, and esri ascii grid.
 
--   [rgdal](http://cran.r-project.org/web/packages/rgdal/index.html):
+-   [rgdal](http://cran.r-project.org/web/packages/rgdal/index.html): R
+    interface to the Geospatial Data Abstraction Library (GDAL). This is
+    the primary tool for reading and writing spatial data formats from
+    R. Support for many vector formats (e.g. shapefiles, geojson,
+    topojson, KML) is available through \`readOGR()\` and
+    \`writeOGR()\`. Raster support is available from \`readGDAL()\` and
+    \`writeGDAL()\`. Binaries for GDAL are pre-built for windows, but
+    GDAL needs to be installed separately for linux and Mac.
 -   [maptools](http://cran.r-project.org/web/packages/maptools/index.html):
--   geojsonio:
--   [plotKML](http://cran.r-project.org/web/packages/plotKML/index.html)
--   [raster](http://cran.r-project.org/web/packages/raster/index.html)
+-   [geojsonio](http://cran.r-project.org/web/packages/geojsonio/index.html):
+    Provides utility for working with geojson data in R. Includes
+    functions to convert sp objects, lists, and character to geojson
+    format.
+-   [plotKML](http://cran.r-project.org/web/packages/plotKML/index.html):
+-   [raster](http://cran.r-project.org/web/packages/raster/index.html):
+    The \`raster\` package provides an alternative to \`rgdal\` for
+    working with raster data. One of the primary benefits of using this
+    package is that it will work with large rasters by reading data from
+    disk without pulling into memory. Several additional utilities for
+    working with raster data are provided.
 
 ### CRAN packages:
 
 -   [geocodeHERE](http://cran.r-project.org/web/packages/geocodeHERE/index.html)
+-   [geojsonio](http://cran.r-project.org/web/packages/geojsonio/index.html)
 -   [geonames](http://cran.r-project.org/web/packages/geonames/index.html)
 -   [ggmap](http://cran.r-project.org/web/packages/ggmap/index.html)
+-   [htmlwidgets](http://cran.r-project.org/web/packages/htmlwidgets/index.html)
 -   [igraph](http://cran.r-project.org/web/packages/igraph/index.html)
 -   [lattice](http://cran.r-project.org/web/packages/lattice/index.html)
+-   [leaflet](http://cran.r-project.org/web/packages/leaflet/index.html)
 -   [leafletR](http://cran.r-project.org/web/packages/leafletR/index.html)
 -   [mapdata](http://cran.r-project.org/web/packages/mapdata/index.html)
 -   [mapproj](http://cran.r-project.org/web/packages/mapproj/index.html)
@@ -236,6 +262,7 @@ and geojson, KML/KMZ, tiff, and esri ascii grid.
 -   [rgdal](http://cran.r-project.org/web/packages/rgdal/index.html)
 -   [Rgooglemaps](http://cran.r-project.org/web/packages/Rgooglemaps/index.html)
 -   [rworldmap](http://cran.r-project.org/web/packages/rworldmap/index.html)
+-   [shiny](http://cran.r-project.org/web/packages/shiny/index.html)
 -   [sp](http://cran.r-project.org/web/packages/sp/index.html) (core)
 -   [USAboundaries](http://cran.r-project.org/web/packages/USAboundaries/index.html)
 -   [UScensus1990blkgrp](http://cran.r-project.org/web/packages/UScensus1990blkgrp/index.html)
@@ -244,7 +271,11 @@ and geojson, KML/KMZ, tiff, and esri ascii grid.
 
 ### Related links:
 
--   [GitHub package: rMaps](https://github.com/ramnathv/rMaps)
 -   [GitHub package: cartodb](https://github.com/Vizzuality/cartodb-r)
+-   [GitHub pacakge:
+    cartographer](https://github.com/lmullen/cartographer)
+-   [GitHub pacakge: openadds](https://github.com/sckott/openadds)
+-   [GitHub pacakge: quickmpar](https://github.com/jhollist/quickmapr)
+-   [GitHub package: rMaps](https://github.com/ramnathv/rMaps)
 -   [GitHub package: rydn](https://github.com/trestletech/rydn)
 
