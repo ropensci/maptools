@@ -10,19 +10,22 @@ CRAN Task View: Mapping tools and services
 This task view contains information about mapping and visualizing
 spatial data in R. The base version of R does not ship with many tools
 for mapping spatial data. Thankfully, there are an increasingly large
-number of tools, both in R and those utilizing javascript libraries, for
-doing so. A list of available packages and functions is presented below,
-grouped by the type of activity. If you have any comments or suggestions
-for additions or improvements for this taskview, go to Github and
-[submit an issue](https://github.com/ropensci/maptools/issues), or [make
-some changes](https://github.com/ropensci/maptools/CONTRIBUTING.md) and
+number of tools for doing so, both with just R or javascript libraries.
+A list of available packages and functions is presented below, grouped
+by the type of activity. If you have any comments or suggestions for
+additions or improvements for this taskview, go to Github and [submit an
+issue](https://github.com/ropensci/maptools/issues), or [make some
+changes](https://github.com/ropensci/maptools/CONTRIBUTING.md) and
 [submit a pull request](https://github.com/ropensci/maptools/pulls). If
 you can't contribute on Github, [send Jeff an
 email](mailto:hollister.jeff@epa.gov). If you have an issue with one of
 the packages discussed below, please contact the maintainer of that
-package. This task view is focused on mapping spatial data. For more on
-working with and analyzing spatial data in R, see the [Spatial Task
-View](Spatial%20Task%20View.html).
+package. This task view is focused on mapping spatial data and less so
+on the foundations of working with spatial data in R. That material is
+covered in detail in the [Spatial Task
+View](Spatial%20Task%20View.html). There is some overlap between the two
+task views, but an effort has been made to reduce redundancy so that
+these task views compliment one another.
 
 Mapping tools in R
 ------------------
@@ -32,10 +35,10 @@ Mapping tools in R
 -   [cartodb](https://github.com/Vizzuality/cartodb-r): CartoDB R
     client. Not on CRAN, and hasn't been active for a while. [Source on
     Github](https://github.com/Vizzuality/cartodb-r)
--   [cartographer](https://github.com/lmullen/cartographer): Interactive
-    maps in R using
+-   [cartographer](https://github.com/ropensci/cartographer):
+    Interactive maps in R using
     [d3-carto-map](https://github.com/emeeks/d3-carto-map). [Source on
-    Github](https://github.com/lmullen/cartographer)
+    Github](https://github.com/ropensci/cartographer)
 -   [ggmap](http://cran.r-project.org/web/packages/ggmap/index.html):
     Visualization of spatial data and models on top of Google Maps,
     OpenStreetMaps, Stamen Maps, or CloudMade Maps using ggplot2.
@@ -43,7 +46,7 @@ Mapping tools in R
 -   [leaflet](http://cran.r-project.org/web/packages/leaflet/index.html):
     Client for the JavaScript library Leaflet.js. Uses
     [htmlwidgets](http://cran.r-project.org/web/packages/htmlwidgets/index.html)
-    to provide structure for output. Integrated with R Console,RStudio,
+    to provide structure for output. Integrated with R Console, RStudio,
     and R Markdown v 2. Can include interactive maps with markdown
     documents as well as with
     [shiny](http://cran.r-project.org/web/packages/shiny/index.html)
@@ -128,7 +131,7 @@ options:
     for `rgdal` on
     R-Forge](https://r-forge.r-project.org/projects/rgdal/).
 -   [mapproj](http://cran.r-project.org/web/packages/mapproj/index.html):
-    This package provides a fucntion to convert two vectors representing
+    This package provides a function to convert two vectors representing
     longitude (x) and lattitude (y) to projected coordinates.
 -   [PBSmapping](http://cran.r-project.org/web/packages/PBSmapping/index.html):
     The function `convUL` will transform coordinates between Universal
@@ -139,7 +142,9 @@ options:
 ### Geocoding
 
 Geocoding is the process of converting address or place name information
-into geographic coordinates.
+into geographic coordinates. Most of these have somewhat restricted
+Terms of Service(TOS). Be sure to read those carefully prior to use.
+Links for the TOS are provided.
 
 -   [geocodeHERE](http://cran.r-project.org/web/packages/geocodeHERE/index.html):
     Client for Nokia's [HERE geocoding
@@ -156,13 +161,24 @@ into geographic coordinates.
     API](https://developer.yahoo.com/boss/). [Source on
     Github](https://github.com/trestletech/rydn)
 
-### Sources of Map Data
+### Map Data
 
-There are \*many\* possible sources of data to use as base layers, so
-this list will most certainly be incomplete. If you have any suggest
-additions, please use the [Github
-Issues](https://github.com/ropensci/maptools/issues).
+There are \*many\* possible sources and formats of data to use as base
+layers, so this list will most certainly be incomplete. Details for
+reading and writing most types of spatial data are already included in
+the [Analysis of Spatial Data Task
+View](Analysis%20of%20Spatial%20Data%20Task%20View.html), thus this list
+will focus on additional sources or features not discussed in that task
+view.
 
+-   [geojsonio](http://cran.r-project.org/web/packages/geojsonio/index.html):
+    Provides utility for working with geojson data in R. Includes
+    functions to convert sp objects, lists, and character to geojson
+    format.
+-   [geonames](http://cran.r-project.org/web/packages/geonames/index.html):
+    functions for working with [geonames](http://www.geonames.org/), a
+    geographical database that covers all countries and contains over
+    eight million placenames
 -   [maps](http://cran.r-project.org/web/packages/maps/index.html):
     Collection of coarse scaled for the US, some European countries, and
     a world map. Stored as \`map\` objects and various other geographic
@@ -173,12 +189,11 @@ Issues](https://github.com/ropensci/maptools/issues).
     etc. Code for projections and additional maps in packages
     [mapproj](http://cran.r-project.org/web/packages/mapproj/index.html)
     [mapdata](http://cran.r-project.org/web/packages/mapdata/index.html).
--   [rworldmap](http://cran.r-project.org/web/packages/rworldmap/index.html):
-    Set of functions to create country based world maps. Allows for
-    joining of user specified data and can display chloropleth, gridded,
-    bubble plot, bar charts, or pie charts. Data stored as \`sp\`
-    objects. [Source on Google
-    Code.](https://code.google.com/p/rworld/downloads/list)
+-   [openadds](https://github.com/sckott/openadds): An R client for
+    [Openaddresses](http://openaddresses.io). The Openaddresses data
+    comes in a variety of formats and this package provides common
+    interface to simplify working with it in R. [Source on
+    Github](https://github.com/sckott/openadds)
 -   [osmar](http://cran.r-project.org/web/packages/osmar/index.html):
     Package for interacting with the Open Street Map API in R. Functions
     for converting an open street map object into
@@ -186,6 +201,19 @@ Issues](https://github.com/ropensci/maptools/issues).
     [igraph](http://cran.r-project.org/web/packages/igraph/index.html)
     objects. [Source on
     R-Forge.](https://r-forge.r-project.org/projects/osmar/)
+-   [rworldmap](http://cran.r-project.org/web/packages/rworldmap/index.html):
+    Set of functions to create country based world maps. Allows for
+    joining of user specified data and can display chloropleth, gridded,
+    bubble plot, bar charts, or pie charts. Data stored as \`sp\`
+    objects. [Source on Google
+    Code.](https://code.google.com/p/rworld/downloads/list)
+-   [tigris](https://github.com/walkerke/tigris): Access US Census TIGER
+    shapefilesdirectly in R. This package is currently in active
+    development.
+-   [USAboundaries](http://cran.r-project.org/web/packages/USAboundaries/index.html):
+    provides spatial objects with the boundaries of states or counties
+    in the United States of America from 1629 to 2000. It provides data
+    from the Atlas of Historical County Boundaries.
 -   [UScensus2010](http://cran.r-project.org/web/packages/UScensus2010/index.html):
     Functions to facilitate accessing data from the 2010 US Census using
     a suite of packages. Includes spatial data for census geographies
@@ -194,51 +222,6 @@ Issues](https://github.com/ropensci/maptools/issues).
     [UScensus1990blkgrp](http://cran.r-project.org/web/packages/UScensus1990blkgrp/index.html)
     and
     [UScensus2000](http://cran.r-project.org/web/packages/UScensus2000/index.html).
--   [geonames](http://cran.r-project.org/web/packages/geonames/index.html):
-    functions for working with [geonames](http://www.geonames.org/), a
-    geographical database that covers all countries and contains over
-    eight million placenames
--   [USAboundaries](http://cran.r-project.org/web/packages/USAboundaries/index.html):
-    provides spatial objects with the boundaries of states or counties
-    in the United States of America from 1629 to 2000. It provides data
-    from the Atlas of Historical County Boundaries.
--   [openadds](https://github.com/sckott/openadds): An R client for
-    [Openaddresses](http://openaddresses.io). The Openaddresses data
-    comes in a variety of formats and this package provides common
-    interface to simplify working with it in R. [Source on
-    Github](https://github.com/sckott/openadds)
-
-### Map Data I/O
-
-There are many packages that provide tools to both read and write vector
-and raster data using R. Below are details on some of the most commonly
-encountered vector and raster file formats, including: shapefiles, topo-
-and geojson, KML/KMZ, raster, and esri ascii grid.
-
--   [rgdal](http://cran.r-project.org/web/packages/rgdal/index.html): R
-    interface to the Geospatial Data Abstraction Library (GDAL). This is
-    the primary tool for reading and writing spatial data formats from
-    R. Support for many vector formats (e.g. shapefiles, geojson,
-    topojson, KML) is available through \`readOGR()\` and
-    \`writeOGR()\`. Raster support is available from \`readGDAL()\` and
-    \`writeGDAL()\`. Binaries for GDAL are pre-built for windows, but
-    GDAL needs to be installed separately for linux and Mac.
--   [maptools](http://cran.r-project.org/web/packages/maptools/index.html):
-    Another set of tools to faciliate reading spaital data. Focus is on
-    shapefiles and also provides conversions between many other R
-    spatial packages.
--   [geojsonio](http://cran.r-project.org/web/packages/geojsonio/index.html):
-    Provides utility for working with geojson data in R. Includes
-    functions to convert sp objects, lists, and character to geojson
-    format.
--   [plotKML](http://cran.r-project.org/web/packages/plotKML/index.html):
-    Provides functions to convert from sp-classes into KML/KMZ.
--   [raster](http://cran.r-project.org/web/packages/raster/index.html):
-    The \`raster\` package provides an alternative to \`rgdal\` for
-    reading in raster data. One of the primary benefits of using this
-    package is that it will work with large rasters by reading data from
-    disk without pulling into memory. Several additional utilities for
-    working with raster data are provided.
 
 ### CRAN packages:
 
@@ -254,13 +237,11 @@ and geojson, KML/KMZ, raster, and esri ascii grid.
 -   [mapdata](http://cran.r-project.org/web/packages/mapdata/index.html)
 -   [mapproj](http://cran.r-project.org/web/packages/mapproj/index.html)
 -   [maps](http://cran.r-project.org/web/packages/maps/index.html)
--   [maptools](http://cran.r-project.org/web/packages/maptools/index.html)
 -   [micromap](http://cran.r-project.org/web/packages/micromap/index.html)
 -   [OpenStreetMap](http://cran.r-project.org/web/packages/OpenStreetMap/index.html)
 -   [osmar](http://cran.r-project.org/web/packages/osmar/index.html)
 -   [PBSmapping](http://cran.r-project.org/web/packages/PBSmapping/index.html)
 -   [plotGoogleMaps](http://cran.r-project.org/web/packages/plotGoogleMaps/index.html)
--   [plotKML](http://cran.r-project.org/web/packages/plotKML/index.html)
 -   [raster](http://cran.r-project.org/web/packages/raster/index.html)
 -   [rasterVis](http://cran.r-project.org/web/packages/rasterVis/index.html)
 -   [rgdal](http://cran.r-project.org/web/packages/rgdal/index.html)
@@ -275,11 +256,6 @@ and geojson, KML/KMZ, raster, and esri ascii grid.
 
 ### Related links:
 
--   [GitHub package: cartodb](https://github.com/Vizzuality/cartodb-r)
--   [GitHub pacakge:
-    cartographer](https://github.com/lmullen/cartographer)
--   [GitHub pacakge: openadds](https://github.com/sckott/openadds)
--   [GitHub pacakge: quickmpar](https://github.com/jhollist/quickmapr)
--   [GitHub package: rMaps](https://github.com/ramnathv/rMaps)
--   [GitHub package: rydn](https://github.com/trestletech/rydn)
+-   [Analysis of Spatial Data Task
+    View](http://cran.r-project.org/web/views/Spatial.html)
 

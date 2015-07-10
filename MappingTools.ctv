@@ -8,8 +8,8 @@
 
 <info> This task view contains information about mapping and visualizing spatial
 data in R.  The base version of R does not ship with many tools for mapping
-spatial data. Thankfully, there are an increasingly large number of tools, both
-in R and those utilizing javascript libraries, for doing so. A list of available
+spatial data. Thankfully, there are an increasingly large number of tools for doing so, both
+with just R or javascript libraries.  A list of available
 packages and functions is presented below, grouped by the type of activity.
 
 If you have any comments or suggestions for additions or improvements for this
@@ -21,8 +21,7 @@ submit a pull request</a>. If you can't contribute on Github,
 issue with one of the packages discussed below, please contact the maintainer of
 that package.
 
-This task view is focused on mapping spatial data.  For more on working with and
-analyzing spatial data in R, see the <view>Spatial Task View</view>.
+This task view is focused on mapping spatial data and less so on the foundations of working with spatial data in R.  That material is covered in detail in the <view>Spatial Task View</view>.  There is some overlap between the two task views, but an effort has been made to reduce redundancy so that these task views compliment one another.
 
 <h2>
 Mapping tools in R
@@ -36,9 +35,9 @@ Mapping tools in R
     <a href="https://github.com/Vizzuality/cartodb-r">Source on Github</a>
 </li>
 <li>
-  <a href="https://github.com/lmullen/cartographer">cartographer</a>: Interactive
+  <a href="https://github.com/ropensci/cartographer">cartographer</a>: Interactive
   maps in R using <a href="https://github.com/emeeks/d3-carto-map">d3-carto-map</a>.
-  <a href="https://github.com/lmullen/cartographer">Source on Github</a>
+  <a href="https://github.com/ropensci/cartographer">Source on Github</a>
 </li>
 <li>
   <pkg>ggmap</pkg>: Visualization of spatial data and models on top of Google Maps,
@@ -46,7 +45,7 @@ Mapping tools in R
   <a href="https://github.com/dkahle/ggmap">Source on Github</a>
 </li>
 <li>
-  <pkg>leaflet</pkg>: Client for the JavaScript library Leaflet.js.  Uses <pkg>htmlwidgets</pkg> to provide structure for output.  Integrated with R Console,RStudio, and R Markdown v 2.  Can include interactive maps with markdown documents as well as with <pkg>shiny</pkg> apps.  <a href="https://github.com/rstudio/leaflet">Source on Github</a>
+  <pkg>leaflet</pkg>: Client for the JavaScript library Leaflet.js.  Uses <pkg>htmlwidgets</pkg> to provide structure for output.  Integrated with R Console, RStudio, and R Markdown v 2.  Can include interactive maps with markdown documents as well as with <pkg>shiny</pkg> apps.  <a href="https://github.com/rstudio/leaflet">Source on Github</a>
 </li>
 <li>
   <pkg>leafletR</pkg>: Another client for the JavaScript library Leaflet.js. Basic mapping
@@ -128,7 +127,7 @@ Mapping tools in R
   values to the new cell values. Dealing with this requires a separate funciton
   and <code>rasterProject()</code> has options for dealing with the interpolation.
 <li>
-  <pkg>mapproj</pkg>: This package provides a fucntion to convert two vectors
+  <pkg>mapproj</pkg>: This package provides a function to convert two vectors
   representing longitude (x) and  lattitude (y) to projected coordinates.
 </li>
 <li>
@@ -141,7 +140,7 @@ Mapping tools in R
 
 <p><strong>Geocoding</strong></p>
 <p>Geocoding is the process of converting address or place name information into
-  geographic coordinates. </p>
+  geographic coordinates. Most of these have somewhat restricted Terms of Service(TOS).  Be sure to read those carefully prior to use.  Links for the TOS are provided.</p>
 <ul>
 <li>
   <pkg>geocodeHERE</pkg>: Client for Nokia's
@@ -160,11 +159,19 @@ Mapping tools in R
 </li>
 </ul>
 
-<p><strong>Sources of Map Data</strong></p>
-<p>There are *many* possible sources of data to use as base layers, so this list
-will most certainly be incomplete.  If you have any suggest additions, please use
-the [Github Issues](https://github.com/ropensci/maptools/issues).</p>
+<p><strong>Map Data</strong></p>
+<p>There are *many* possible sources and formats of data to use as base layers, so this list
+will most certainly be incomplete.  Details for reading and writing most types of spatial data are already included in the <view>Analysis of Spatial Data Task View</view>, thus this list will focus on additional sources or features not discussed in that task view.  </p>
 <ul>
+
+<li>
+   <pkg>geojsonio</pkg>: Provides utility for working with geojson data in R.  Includes functions to convert sp objects, lists, and character to geojson format.
+</li>
+<li>
+  <pkg>geonames</pkg>: functions for working with
+  <a href="http://www.geonames.org/">geonames</a>, a geographical database that
+  covers all countries and contains over eight million placenames
+</li>
 <li>
   <pkg>maps</pkg>: Collection of coarse scaled for the US, some European
   countries, and a world map.  Stored as  `map` objects and various other
@@ -173,10 +180,8 @@ the [Github Issues](https://github.com/ropensci/maptools/issues).</p>
   projections and additional maps in packages <pkg>mapproj</pkg> <pkg>mapdata</pkg>.
 </li>
 <li>
-  <pkg>rworldmap</pkg>: Set of functions to create country based world maps.
-  Allows for joining of user specified data and can display chloropleth, gridded,
-  bubble plot, bar charts, or pie charts. Data stored as `sp` objects.
-  <a href="https://code.google.com/p/rworld/downloads/list">Source on Google Code.</a>
+    <a href="https://github.com/sckott/openadds">openadds</a>: An R client for <a href="http://openaddresses.io">Openaddresses</a>.  The Openaddresses data comes in a variety of formats and this package provides common interface to simplify working with it in R.
+    <a href="https://github.com/sckott/openadds">Source on Github</a>
 </li>
 <li>
   <pkg>osmar</pkg>: Package for interacting with the Open Street Map API in R.
@@ -185,15 +190,13 @@ the [Github Issues](https://github.com/ropensci/maptools/issues).</p>
   <a href="https://r-forge.r-project.org/projects/osmar/">Source on R-Forge.</a>
 </li>
 <li>
-  <pkg>UScensus2010</pkg>: Functions to facilitate accessing data from
-  the 2010 US Census using a suite of packages.  Includes spatial data for census geographies (e.g. tracts,
-  blocks, block groups, etc.).  This packages is the third in a series of
-  related package suites: <pkg>UScensus1990blkgrp</pkg> and <pkg>UScensus2000</pkg>.    
+  <pkg>rworldmap</pkg>: Set of functions to create country based world maps.
+  Allows for joining of user specified data and can display chloropleth, gridded,
+  bubble plot, bar charts, or pie charts. Data stored as `sp` objects.
+  <a href="https://code.google.com/p/rworld/downloads/list">Source on Google Code.</a>
 </li>
 <li>
-  <pkg>geonames</pkg>: functions for working with
-  <a href="http://www.geonames.org/">geonames</a>, a geographical database that
-  covers all countries and contains over eight million placenames
+  <a href="https://github.com/walkerke/tigris">tigris</a>: Access US Census TIGER shapefilesdirectly in R.  This package is currently in active development.
 </li>
 <li>
   <pkg>USAboundaries</pkg>: provides spatial objects with the boundaries of states
@@ -201,31 +204,13 @@ the [Github Issues](https://github.com/ropensci/maptools/issues).</p>
   from the Atlas of Historical County Boundaries.
 </li>
 <li>
-    <a href="https://github.com/sckott/openadds">openadds</a>: An R client for <a href="http://openaddresses.io">Openaddresses</a>.  The Openaddresses data comes in a variety of formats and this package provides common interface to simplify working with it in R.
-    <a href="https://github.com/sckott/openadds">Source on Github</a>
+  <pkg>UScensus2010</pkg>: Functions to facilitate accessing data from
+  the 2010 US Census using a suite of packages.  Includes spatial data for census geographies (e.g. tracts,
+  blocks, block groups, etc.).  This packages is the third in a series of
+  related package suites: <pkg>UScensus1990blkgrp</pkg> and <pkg>UScensus2000</pkg>.    
 </li>
-</ul>
 
-<p><strong>Map Data I/O</strong></p>
-<p>There are many packages that provide tools to both read and write vector and raster data using R.  Below are details on some of the most commonly encountered vector and raster file formats, including: shapefiles, topo- and geojson, KML/KMZ, raster, and esri ascii grid.</p>
-<ul>
-<li>
-  <pkg>rgdal</pkg>: R interface to the Geospatial Data Abstraction Library (GDAL).  This is the primary tool for reading and writing spatial data formats from R.  Support for many vector formats (e.g.  shapefiles, geojson, topojson, KML) is available through `readOGR()` and `writeOGR()`.  Raster support is available from `readGDAL()` and `writeGDAL()`.  Binaries for GDAL are pre-built for windows, but GDAL needs to be installed separately for linux and Mac.  
-</li>
-<li>
-  <pkg>maptools</pkg>: Another set of tools to faciliate reading spaital data.  Focus is on shapefiles and also provides conversions between many other R spatial packages.
-</li>
-<li>
-   <pkg>geojsonio</pkg>: Provides utility for working with geojson data in R.  Includes functions to convert sp objects, lists, and character to geojson format.
-</li>
-<li>
-  <pkg>plotKML</pkg>: Provides functions to convert from sp-classes into KML/KMZ.
-</li>
-<li>
-  <pkg>raster</pkg>: The `raster` package provides an alternative to `rgdal` for reading in raster data.  One of the primary benefits of using this package is that it will work with large rasters by reading data from disk without pulling into memory.  Several additional utilities for working with raster data are provided.
-</li>
 </ul>
-
 
 </info>
 
@@ -243,13 +228,11 @@ the [Github Issues](https://github.com/ropensci/maptools/issues).</p>
   <pkg>mapdata</pkg>
   <pkg>mapproj</pkg>
   <pkg>maps</pkg>
-  <pkg>maptools</pkg>
   <pkg>micromap</pkg>
   <pkg>OpenStreetMap</pkg>
   <pkg>osmar</pkg>
   <pkg>PBSmapping</pkg>
   <pkg>plotGoogleMaps</pkg>
-  <pkg>plotKML</pkg>
   <pkg>raster</pkg>
   <pkg>rasterVis</pkg>
   <pkg>rgdal</pkg>
@@ -263,12 +246,7 @@ the [Github Issues](https://github.com/ropensci/maptools/issues).</p>
 </packagelist>
 
 <links>
-  <a href="https://github.com/Vizzuality/cartodb-r">GitHub package: cartodb</a>
-  <a href="https://github.com/lmullen/cartographer">GitHub pacakge: cartographer</a>  
-  <a href="https://github.com/sckott/openadds">GitHub pacakge: openadds</a>	
-  <a href="https://github.com/jhollist/quickmapr">GitHub pacakge: quickmpar</a>
-  <a href="https://github.com/ramnathv/rMaps">GitHub package: rMaps</a>
-  <a href="https://github.com/trestletech/rydn">GitHub package: rydn</a>
+  <a href="http://cran.r-project.org/web/views/Spatial.html">Analysis of Spatial Data Task View</a>
 </links>
 
 </CRANTaskView>
