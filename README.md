@@ -76,7 +76,7 @@ Mapping tools in R
     as well as identifying features. [Source on
     Github](https://github.com/jhollist/quickmapr)
 -   [rasterVis](http://cran.r-project.org/web/packages/rasterVis/index.html):
-    Package for enchanced visualization of raster data. [Source on
+    Package for enhanced visualization of raster data. [Source on
     Github](https://github.com/oscarperpinan/rastervis/)
 -   [Rgooglemaps](http://cran.r-project.org/web/packages/Rgooglemaps/index.html):
     Query Google static maps, and use the map as a background image to
@@ -92,7 +92,7 @@ Mapping tools in R
     package in R for doing spatial data manipulation and analysis.
     Plotting capabilities in
     [sp](http://cran.r-project.org/web/packages/sp/index.html) are
-    provdied through some default plot methods. More advanced plotting
+    provided through some default plot methods. More advanced plotting
     based on
     [lattice](http://cran.r-project.org/web/packages/lattice/index.html).
     [Source on
@@ -101,19 +101,22 @@ Mapping tools in R
 ### Projecting Data
 
 Coordinates for spatial data can come in many different flavors with
-different units, datums, projections, and more. Many of the tools will
+different units, datum, projections, and more. Many of the tools will
 visualize your data regardless of the native coordinate reference
 system; however, most (all?) of the javascript libraries assume some
-flavor of lattitude-longitude, thus if your data are projected they need
+flavor of latitude-longitude, thus if your data are projected they need
 to be transformed back to geographic coordinates prior to mapping. For
-most mapping and visulaization efforts unprojected data (often displayed
-in Web Mercator/EPSG::3857) is fine; however, if accuarate area, length,
+most mapping and visualization efforts unprojected data (often displayed
+in Web Mercator/EPSG::3857) is fine; however, if accurate area, length,
 or distance measurements are required through interacting with the map,
 then projections need to be considered. A discussion of projections and
 coordinate systems is beyond the scope of this task view. To learn more
 a good starting place is [NCEAS' Overview of Coordinate Reference
 Systems in
-R](https://www.nceas.ucsb.edu/\~frazier/RSpatialGuides/OverviewCoordinateReferenceSystems.pdf)
+R](https://www.nceas.ucsb.edu/\~frazier/RSpatialGuides/OverviewCoordinateReferenceSystems.pdf).
+This more general discussion of projection from the
+[USGS](http://egsc.usgs.gov/isb//pubs/MapProjections/projections.html)
+is also good.
 
 Once you know that you need to transform you data there are several
 options:
@@ -132,7 +135,7 @@ options:
     R-Forge](https://r-forge.r-project.org/projects/rgdal/).
 -   [mapproj](http://cran.r-project.org/web/packages/mapproj/index.html):
     This package provides a function to convert two vectors representing
-    longitude (x) and lattitude (y) to projected coordinates.
+    longitude (x) and latitude (y) to projected coordinates.
 -   [PBSmapping](http://cran.r-project.org/web/packages/PBSmapping/index.html):
     The function `convUL` will transform coordinates between Universal
     Transverse Mercator (UTM) and longitude-latitude. A data frame with
@@ -178,11 +181,11 @@ view.
 -   [geonames](http://cran.r-project.org/web/packages/geonames/index.html):
     functions for working with [geonames](http://www.geonames.org/), a
     geographical database that covers all countries and contains over
-    eight million placenames
+    eight million place names
 -   [maps](http://cran.r-project.org/web/packages/maps/index.html):
     Collection of coarse scaled for the US, some European countries, and
     a world map. Stored as \`map\` objects and various other geographic
-    datasets. Location information in decimal degrees. Needs coversion
+    datasets. Location information in decimal degrees. Needs conversion
     to work with visualization from
     [sp](http://cran.r-project.org/web/packages/sp/index.html),
     [ggmap](http://cran.r-project.org/web/packages/ggmap/index.html),
@@ -208,7 +211,7 @@ view.
     objects. [Source on Google
     Code.](https://code.google.com/p/rworld/downloads/list)
 -   [tigris](https://github.com/walkerke/tigris): Access US Census TIGER
-    shapefilesdirectly in R. This package is currently in active
+    shapefiles directly in R. This package is currently in active
     development.
 -   [USAboundaries](http://cran.r-project.org/web/packages/USAboundaries/index.html):
     provides spatial objects with the boundaries of states or counties
