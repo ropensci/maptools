@@ -190,6 +190,9 @@ will most certainly be incomplete.  Details for reading and writing most types o
   <a href="https://r-forge.r-project.org/projects/osmar/">Source on R-Forge.</a>
 </li>
 <li>
+  <a href="https://github.com/ropensci/prism">prism</a>: Accesses climate data from [PRSIM](http://www.prism.oregonstate.edu/). Also provides some basic plotting and mapping functions.
+</li>
+<li>
   <pkg>rworldmap</pkg>: Set of functions to create country based world maps.
   Allows for joining of user specified data and can display chloropleth, gridded,
   bubble plot, bar charts, or pie charts. Data stored as `sp` objects.

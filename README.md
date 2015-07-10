@@ -204,6 +204,9 @@ view.
     [igraph](http://cran.r-project.org/web/packages/igraph/index.html)
     objects. [Source on
     R-Forge.](https://r-forge.r-project.org/projects/osmar/)
+-   [prism](https://github.com/ropensci/prism): Accesses climate data
+    from [PRSIM](http://www.prism.oregonstate.edu/). Also provides some
+    basic plotting and mapping functions.
 -   [rworldmap](http://cran.r-project.org/web/packages/rworldmap/index.html):
     Set of functions to create country based world maps. Allows for
     joining of user specified data and can display chloropleth, gridded,
