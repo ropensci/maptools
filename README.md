@@ -56,20 +56,26 @@ Mapping tools in R
     functionality to combine vector data and online map tiles from
     different sources. [Source on
     Github](https://github.com/chgrl/leafletR)
+-   [mapview](http://cran.r-project.org/web/packages/mapview/index.html):
+    This package provides wrappers to the
+    [leaflet](http://cran.r-project.org/web/packages/leaflet/index.html)
+    package that simplifies the creation of maps. Stated purpose of the
+    package is to facilitate interactive viewing of spatial data in R.
+    [Source on
+    Github.](https://github.com/environmentalinformatics-marburg/mapview)
 -   [micromap](http://cran.r-project.org/web/packages/micromap/index.html):
     This group of functions simplifies the creation of linked micromap
     plots, and uses ggplot2 plotting framework. [Source on
     Github.](https://github.com/USEPA/R-micromap-package-development)
 -   [OpenStreetMap](http://cran.r-project.org/web/packages/OpenStreetMap/index.html):
-    An R client for the Open Street Maps API. [Source on
-    Github](https://github.com/)
+    An R client for fetching raster images via the Open Street Maps API.
 -   [plotGoogleMaps](http://cran.r-project.org/web/packages/plotGoogleMaps/index.html):
     This package provides a interactive plot device for handling the
     geographic data for web browsers. It is designed for the automatic
     creation of web maps as a combination of users' data and Google Maps
     layers.
--   [quickmpar](https://github.com/jhollist/quickmapr): Quick
-    visualization of
+-   [quickmpar](http://cran.r-project.org/web/packages/quickmpar/index.html):
+    Quick visualization of
     [sp](http://cran.r-project.org/web/packages/sp/index.html) and
     [raster](http://cran.r-project.org/web/packages/raster/index.html)
     objects. Provides basic interactivity including zooming and panning
@@ -97,6 +103,10 @@ Mapping tools in R
     [lattice](http://cran.r-project.org/web/packages/lattice/index.html).
     [Source on
     R-Forge](https://r-forge.r-project.org/projects/rspatial/)
+-   [tmap](http://cran.r-project.org/web/packages/tmap/index.html):
+    Package provides an approach to build thematic maps (e.g.
+    chloropleth or bubble maps). Utilizes a grammar of graphics syntax.
+    [Source on GitHub](https://github.com/mtennekes/tmap)
 
 ### Projecting Data
 
@@ -243,11 +253,13 @@ view.
 -   [mapdata](http://cran.r-project.org/web/packages/mapdata/index.html)
 -   [mapproj](http://cran.r-project.org/web/packages/mapproj/index.html)
 -   [maps](http://cran.r-project.org/web/packages/maps/index.html)
+-   [mapview](http://cran.r-project.org/web/packages/mapview/index.html)
 -   [micromap](http://cran.r-project.org/web/packages/micromap/index.html)
 -   [OpenStreetMap](http://cran.r-project.org/web/packages/OpenStreetMap/index.html)
 -   [osmar](http://cran.r-project.org/web/packages/osmar/index.html)
 -   [PBSmapping](http://cran.r-project.org/web/packages/PBSmapping/index.html)
 -   [plotGoogleMaps](http://cran.r-project.org/web/packages/plotGoogleMaps/index.html)
+-   [quickmpar](http://cran.r-project.org/web/packages/quickmpar/index.html)
 -   [raster](http://cran.r-project.org/web/packages/raster/index.html)
 -   [rasterVis](http://cran.r-project.org/web/packages/rasterVis/index.html)
 -   [rgdal](http://cran.r-project.org/web/packages/rgdal/index.html)
@@ -255,6 +267,7 @@ view.
 -   [rworldmap](http://cran.r-project.org/web/packages/rworldmap/index.html)
 -   [shiny](http://cran.r-project.org/web/packages/shiny/index.html)
 -   [sp](http://cran.r-project.org/web/packages/sp/index.html) (core)
+-   [tmap](http://cran.r-project.org/web/packages/tmap/index.html)
 -   [USAboundaries](http://cran.r-project.org/web/packages/USAboundaries/index.html)
 -   [UScensus1990blkgrp](http://cran.r-project.org/web/packages/UScensus1990blkgrp/index.html)
 -   [UScensus2000](http://cran.r-project.org/web/packages/UScensus2000/index.html)

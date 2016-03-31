@@ -53,14 +53,18 @@ Mapping tools in R
     sources. <a href="https://github.com/chgrl/leafletR">Source on Github</a>
 </li>
 <li>
+  <pkg>mapview</pkg>: This package provides wrappers to the <pkg>leaflet</pkg> package that simplifies the creation of maps.  Stated purpose of the package is to facilitate interactive viewing of spatial data in R.
+  <a href="https://github.com/environmentalinformatics-marburg/mapview">Source on
+  Github.</a>
+</li>
+<li>
   <pkg>micromap</pkg>: This group of functions simplifies the creation of linked
   micromap plots, and uses ggplot2 plotting framework.
   <a href="https://github.com/USEPA/R-micromap-package-development">Source on
   Github.</a>
 </li>
 <li>
-  <pkg>OpenStreetMap</pkg>: An R client for the Open Street Maps API.
-  <a href="https://github.com/">Source on Github</a>
+  <pkg>OpenStreetMap</pkg>: An R client for fetching raster images via the Open Street Maps API.
 </li>
 <li>
   <pkg>plotGoogleMaps</pkg>: This package provides a interactive plot device for
@@ -68,9 +72,7 @@ Mapping tools in R
   creation of web maps as a combination of users' data and Google Maps layers.
 </li>
 <li>
-  <a href="https://github.com/jhollist/quickmapr">quickmpar</a>: Quick
-  visualization of <pkg>sp</pkg> and <pkg>raster</pkg> objects.  Provides basic
-  interactivity including zooming and panning as well as identifying features.
+  <pkg>quickmpar</pkg>: Quick visualization of <pkg>sp</pkg> and <pkg>raster</pkg> objects.  Provides basic interactivity including zooming and panning as well as identifying features.
   <a href="https://github.com/jhollist/quickmapr">Source on Github</a>
 </li>
 <li>
@@ -95,6 +97,10 @@ Mapping tools in R
   analysis. Plotting capabilities in <pkg>sp</pkg> are provided through some
   default plot methods.  More advanced plotting based on <pkg>lattice</pkg>.
   <a href="https://r-forge.r-project.org/projects/rspatial/">Source on R-Forge</a>
+</li>
+<li>
+  <pkg>tmap</pkg>: Package provides an approach to build thematic maps (e.g. chloropleth or bubble maps).  Utilizes a grammar of graphics syntax.
+  <a href="https://github.com/mtennekes/tmap">Source on GitHub</a>
 </li>
 </ul>
 
