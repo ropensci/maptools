@@ -95,14 +95,16 @@ Mapping tools in R
     [Crosslet](http://sztanko.github.io/crosslet/). [Source on
     Github](https://github.com/ramnathv/rMaps)
 -   [sp](http://cran.r-project.org/web/packages/sp/index.html): Core
-    package in R for doing spatial data manipulation and analysis.
-    Plotting capabilities in
-    [sp](http://cran.r-project.org/web/packages/sp/index.html) are
-    provided through some default plot methods. More advanced plotting
+    spatial package in R with basic spatial data manipulation methods.
+	Most spatial analysis packages reuse the classes and methods provided by
+    [sp](http://cran.r-project.org/web/packages/sp/index.html).
+    Plotting capability in
+    [sp](http://cran.r-project.org/web/packages/sp/index.html) is
+    provided through plot methods. More advanced plotting
     based on
     [lattice](http://cran.r-project.org/web/packages/lattice/index.html).
     [Source on
-    R-Forge](https://r-forge.r-project.org/projects/rspatial/)
+    github](https://github.com/edzer/sp/)
 -   [tmap](http://cran.r-project.org/web/packages/tmap/index.html):
     Package provides an approach to build thematic maps (e.g.
     chloropleth or bubble maps). Utilizes a grammar of graphics syntax.
@@ -140,7 +142,7 @@ options:
     spTransform methods in
     [rgdal](http://cran.r-project.org/web/packages/rgdal/index.html).
     [Source for `sp` on
-    R-Forge](https://r-forge.r-project.org/projects/rspatial/). [Source
+    Github](https://github.com/edzer/sp/). [Source
     for `rgdal` on
     R-Forge](https://r-forge.r-project.org/projects/rgdal/).
 -   [mapproj](http://cran.r-project.org/web/packages/mapproj/index.html):
