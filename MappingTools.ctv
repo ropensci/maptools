@@ -93,10 +93,8 @@ Mapping tools in R
   <a href="https://github.com/ramnathv/rMaps">Source on Github</a>
 </li>
 <li>
-  <pkg>sp</pkg>: Core package in R for doing spatial data manipulation and
-  analysis. Plotting capabilities in <pkg>sp</pkg> are provided through some
-  default plot methods.  More advanced plotting based on <pkg>lattice</pkg>.
-  <a href="https://r-forge.r-project.org/projects/rspatial/">Source on R-Forge</a>
+  <pkg>sp</pkg>: Core spatial package in R with basic spatial data manipulation methods. Most spatial analysis packages reuse the classes and methods provided by [sp](http://cran.r-project.org/web/packages/sp/index.html). Plotting capability in [sp](http://cran.r-project.org/web/packages/sp/index.html) is provided through plot methods. More advanced plotting based on <pkg>lattice</pkg>.
+  <a href="https://github.com/edzer/sp/">Source on GitHub</a>
 </li>
 <li>
   <pkg>tmap</pkg>: Package provides an approach to build thematic maps (e.g. chloropleth or bubble maps).  Utilizes a grammar of graphics syntax.
@@ -125,7 +123,7 @@ Mapping tools in R
   <pkg>rgdal</pkg>) is the workhorse function for spatial transformations of
   vector data and it uses [PROJ.4](http://trac.osgeo.org/proj/) arguments to
   specify the transformations.  Accepted inputs are provided by the spTransform
-  methods in <pkg>rgdal</pkg>.   <a href="https://r-forge.r-project.org/projects/rspatial/"> Source for <code>sp</code> on R-Forge</a>. <a href="https://r-forge.r-project.org/projects/rgdal/"> Source for <code>rgdal</code> on R-Forge</a>.
+  methods in <pkg>rgdal</pkg>.   <a href="https://github.com/edzer/sp/"> Source for <code>sp</code> on GitHub</a>. <a href="https://r-forge.r-project.org/projects/rgdal/"> Source for <code>rgdal</code> on R-Forge</a>.
 </li>
   <pkg>raster</pkg>: Use <code>rasterProject()</code> to project rasters.
   Projecting rasters is a bit different than vector as the transformation results
